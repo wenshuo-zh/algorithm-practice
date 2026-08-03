@@ -1,0 +1,20 @@
+# VS 构建产物
+x64/
+Debug/
+Release/
+*.vcxproj.user
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.log
+*.tlog
+
+# VS IDE缓存
+.vs/
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Windows缩略图
+Thumbs.db

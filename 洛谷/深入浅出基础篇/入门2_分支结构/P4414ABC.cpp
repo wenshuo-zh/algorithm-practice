@@ -24,7 +24,7 @@ int main() {
 	}
 	else {
 		cout << c << " ";
-		if (s[1] == 'A')cout << a << " " << b;
+		if (s[1] == 'A')cout << a << " " << b << endl;
 		else cout << b << " " << a << endl;
 	}
 	return 0;

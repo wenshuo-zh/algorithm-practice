@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 C++ algorithm practice (刷题) on [洛谷 (Luogu)](https://www.luogu.com.cn/). Goal: complete all **271 problems** in Luogu's "深入浅出基础篇" series. Each chapter is its own Visual Studio project.
 
-Progress is tracked in `README.md` — keep it in sync when problems are completed.
+Progress is tracked in `README.md` — keep it in sync when problems are completed. **README.md is the authoritative progress source**; CLAUDE.md intentionally omits live counts to avoid staleness.
 
 ## Repo Structure
 
@@ -14,9 +14,9 @@ Progress is tracked in `README.md` — keep it in sync when problems are complet
 刷题/
 ├── 洛谷/
 │   └── 深入浅出基础篇/
-│       ├── 入门1_顺序结构/        # ✅ 15/15 done
-│       ├── 入门2_分支结构/        # ✅ 18/18 done
-│       ├── 入门3_循环结构/        # 🔄 in progress (5/21)
+│       ├── 入门1_顺序结构/        # ✅ done
+│       ├── 入门2_分支结构/        # ✅ done
+│       ├── 入门3_循环结构/        # 🔄 in progress
 │       └── ...                    # future chapters
 ├── 力扣/                          # planned
 ├── README.md                      # progress tracker
@@ -52,18 +52,22 @@ Each vcxproj contains **exactly one** `<ClCompile Include="...">` entry because 
 
 **When adding a new problem or switching which problem to compile:**
 
-1. In `<chapter>.vcxproj`, replace the `<ClCompile Include="...">` line:
+1. In `<chapter>.vcxproj`, find the `<ItemGroup>` containing `<ClCompile Include="...">` and replace the `Include` value (or add the whole `<ClCompile>` + `<ItemGroup>` block if none exists):
    ```xml
-   <ClCompile Include="P1234题目名.cpp" />
+   <ItemGroup>
+     <ClCompile Include="P1234题目名.cpp" />
+   </ItemGroup>
    ```
-2. In `<chapter>.vcxproj.filters`, replace the entire `<ClCompile>` block (the `<Filter>` child element must be included):
+2. In `<chapter>.vcxproj.filters`, do the same — find the `<ClCompile>` inside an `<ItemGroup>` and replace it, or add the block if none exists:
    ```xml
-   <ClCompile Include="P1234题目名.cpp">
-     <Filter>源文件</Filter>
-   </ClCompile>
+   <ItemGroup>
+     <ClCompile Include="P1234题目名.cpp">
+       <Filter>源文件</Filter>
+     </ClCompile>
+   </ItemGroup>
    ```
 
-Both files must be updated. The vcxproj controls compilation; the filters file controls IDE display.
+Both files must be updated. The vcxproj controls compilation; the filters file controls IDE display. **Never include more than one `<ClCompile>`** — two `.cpp` files in one project = linker error (duplicate `main`).
 
 ## Problem Naming Convention
 
@@ -104,3 +108,21 @@ Example commit message:
 ```
 完成：入门3循环结构 +1题 (P1980)，进度38/271
 ```
+
+## Chapter README Convention
+
+Each chapter directory MUST have a `README.md` containing a problem-index table. Each row links to the source file on GitHub:
+
+```markdown
+## 入门N_章节名（X/Y 状态）
+
+| 题号 | 题目 | 技巧/考点 | 踩坑 |
+|------|------|-----------|------|
+| P1001 | [A+B Problem](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/.../P1001A+Bproblem.cpp) | 基本输入输出 | - |
+```
+
+Rules:
+- **After solving each problem**, add its row to the chapter README with technique + pitfall notes
+- Link to GitHub blob URL (not raw), so the file renders in the browser
+- Update the progress counter in the heading when the chapter's count changes
+- Every chapter README has a "返回总览" link back to the main `README.md`

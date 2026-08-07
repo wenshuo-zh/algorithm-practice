@@ -18,7 +18,7 @@
 | P1424 | [小鱼的航程（改进版）](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P1424小鱼的航线程（改进版）.cpp) | 星期循环+条件累加 | 周末(6,7)跳过；循环n天非n周 |
 | P1888 | [三角函数](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P1888三角函数.cpp) | 排序+最大公约数约分 | 需用 `gcd` 约分；输出"分子/分母"格式 |
 | P1046 | [陶陶摘苹果](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P1046陶陶摘苹果.cpp) | 遍历计数满足条件 | 板凳高度30要加上；`<=` 非 `<` |
-| P1055 | [ISBN号码](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P1055 ISBN号码.cpp) | 字符串解析+模11校验 | 识别码为10时用'X'表示；修改后需输出完整字符串 |
+| P1055 | [ISBN号码](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P1055%20ISBN号码.cpp) | 字符串解析+模11校验 | 识别码为10时用'X'表示；修改后需输出完整字符串 |
 | P5710 | [数的性质](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P5710数的性质.cpp) | 布尔变量组合四态判断 | 四个输出依次：与、或、异或、或非 |
 | P1422 | [小玉家的电费](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P1422小玉家的电费.cpp) | 阶梯分段计费 | 跨段时前段全额+后段增量；`%.1lf`保留一位 |
 | P4414 | [ABC](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P4414ABC.cpp) | 排序后按字母映射输出 | 先排序确定abc值，再按输入字符串顺序输出 |

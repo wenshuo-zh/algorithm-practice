@@ -124,5 +124,6 @@ Each chapter directory MUST have a `README.md` containing a problem-index table.
 Rules:
 - **After solving each problem**, add its row to the chapter README with technique + pitfall notes
 - Link to GitHub blob URL (not raw), so the file renders in the browser
+- **URL-encode spaces as `%20`** in filenames — e.g., `P4956%20Davor.cpp` not `P4956 Davor.cpp`
 - Update the progress counter in the heading when the chapter's count changes
 - Every chapter README has a "返回总览" link back to the main `README.md`

@@ -24,4 +24,4 @@
 | P1720 | [月落乌啼算钱](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P1720月落乌啼算钱.cpp) | Binet公式求斐波那契 | 浮点累积乘法有精度损失；n大时可能溢出double |
 | P1980 | [计数问题](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P1980计数问题.cpp) | to_string+字符计数 | `x+'0'` 数字转字符比较 |
 | P2669 | [金币](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P2669金币.cpp) | 双计数器模拟 | day++、count=0、count++三者顺序敏感，调换则出错 |
-| P4956 | [Davor](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P4956 Davor.cpp) | 方程化简+枚举k | 7x+21k=n/52；x需为整数且≤100 |
+| P4956 | [Davor](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P4956%20Davor.cpp) | 方程化简+枚举k | 7x+21k=n/52；x需为整数且≤100 |

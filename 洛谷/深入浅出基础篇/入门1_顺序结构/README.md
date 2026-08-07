@@ -11,11 +11,11 @@
 | B2005 | [字符三角形](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/B2005字符三角形.cpp) | 字符与空格排版 | - |
 | P5703 | [苹果采购](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5703苹果采购.cpp) | 整数乘法 | - |
 | P5704 | [字母转换](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5704字母转换.cpp) | ASCII码转换 | - |
-| P5705 | [数字反转](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5705数字反转.cpp) | 浮点转整数避坑 | 浮点直接取位有精度问题，乘10转整数再逐位提取 |
+| P5705 | [数字反转](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5705数字反转.cpp) | 浮点转整数 | - |
 | P5706 | [再分肥宅水](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5706再分肥宅水.cpp) | printf格式化输出 | - |
 | P5708 | [三角形面积](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5708三角形面积.cpp) | 海伦公式+sqrt | - |
-| P1425 | [小鱼的游泳时间](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P1425小鱼的游泳时间.cpp) | 时间差借位处理 | 分钟不够减需向小时借1当60（60进制借位） |
-| P1421 | [小玉买文具](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P1421小玉买文具.cpp) | 单位换算+整除 | 元角统一换算为角再整除，避免浮点 |
+| P1425 | [小鱼的游泳时间](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P1425小鱼的游泳时间.cpp) | 时间差计算 | - |
+| P1421 | [小玉买文具](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P1421小玉买文具.cpp) | 单位换算+整除 | - |
 | P3954 | [成绩](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P3954成绩.cpp) | 加权求和 | - |
-| P5707 | [上学迟到](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5707上学迟到.cpp) | 时间计算+向上取整 | ceil向上取整；跨天时间（00:00前推）；%02d补零 |
-| B2029 | [大象喝水](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/B2029大象喝水.cpp) | 圆柱体积+ceil | 单位换算（升转立方厘米）；向上取整桶数 |
+| P5707 | [上学迟到](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/P5707上学迟到.cpp) | 时间计算+向上取整 | - |
+| B2029 | [大象喝水](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/B2029大象喝水.cpp) | 圆柱体积+ceil | - |

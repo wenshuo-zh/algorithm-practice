@@ -2,7 +2,7 @@
 
 > 进度：18 / 18 ✅ | [返回总览](../../../README.md)
 
-| 题号 | 题目 | 技巧/考点 | 踩坑 |
+| 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
 | P2433 | [小学数学N合一](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P2433小学数学N合一.cpp) | 多分支if-else链 | 子问题13需 `cbrt()` 立方根 |
 | P5709 | [苹果和虫子](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门2_分支结构/P5709苹果和虫子.cpp) | 向上取整+边界判断 | `t=0` 会除零；剩余苹果可能为负需输出0 |

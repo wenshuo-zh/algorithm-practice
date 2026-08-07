@@ -2,7 +2,7 @@
 
 > 进度：20 / 21 🔄（P1009 高精度搁置） | [返回总览](../../../README.md)
 
-| 题号 | 题目 | 技巧/考点 | 踩坑 |
+| 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
 | P5718 | [找最小值](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P5718找最小值.cpp) | 在线极值（边读边比） | min初值1001依赖题目约束 ai≤1000 |
 | P5719 | [分类平均](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门3_循环结构/P5719分类平均.cpp) | 循环分类统计 | 整数除法转浮点需 `1.0*sum/count`，忘记则结果恒为0 |

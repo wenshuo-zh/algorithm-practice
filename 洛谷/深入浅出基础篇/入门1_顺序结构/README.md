@@ -2,7 +2,7 @@
 
 > 进度：15 / 15 ✅ | [返回总览](../../../README.md)
 
-| 题号 | 题目 | 技巧/考点 | 踩坑 |
+| 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
 | B2002 | [Hello,World!](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/B2002HelloWorld.cpp) | 基本输出 | - |
 | B2025 | [输出字符菱形](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门1_顺序结构/B2025输出字符菱形.cpp) | 格式化输出 | - |

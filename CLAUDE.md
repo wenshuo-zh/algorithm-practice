@@ -116,7 +116,7 @@ Each chapter directory MUST have a `README.md` containing a problem-index table.
 ```markdown
 ## 入门N_章节名（X/Y 状态）
 
-| 题号 | 题目 | 技巧/考点 | 踩坑 |
+| 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
 | P1001 | [A+B Problem](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/.../P1001A+Bproblem.cpp) | 基本输入输出 | - |
 ```

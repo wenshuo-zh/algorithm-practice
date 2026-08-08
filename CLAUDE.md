@@ -17,6 +17,7 @@ Progress is tracked in `README.md` — keep it in sync when problems are complet
 │       ├── 入门1_顺序结构/        # ✅ done
 │       ├── 入门2_分支结构/        # ✅ done
 │       ├── 入门3_循环结构/        # 🔄 in progress
+│       ├── 入门4_数组/            # 🔄 in progress
 │       └── ...                    # future chapters
 ├── 力扣/                          # planned
 ├── README.md                      # progress tracker
@@ -29,6 +30,7 @@ Each chapter directory contains:
 - `<chapter>/` subdirectory — VS-generated project metadata (ignore)
 - `x64/` — build output (gitignored)
 - `P<id><name>.cpp` / `B<id><name>.cpp` — one file per problem
+- `README.md` — chapter problem-index table (see Chapter README Convention below)
 
 Chapter directories use the pattern `入门N_<中文名称>` (e.g., `入门3_循环结构`). The VS projects exist inside these chapter directories.
 
@@ -85,30 +87,6 @@ Each `.cpp` file is named: **`<题号><题目简称>.cpp`**
 - Input via `cin`, output via `cout`; use `printf` for formatted output (e.g., `%02d`)
 - Chinese comments for non-obvious logic; simple solutions need no comments
 
-## Known Problem Issues
-
-Some problems have known limitations noted with `// TODO` comments:
-
-- **P1009 阶乘之和**: n≤50 requires big-integer arithmetic (高精度). Current solution uses `int` and will overflow for larger n. Marked `// TODO: 待完善 — n≤50需要高精度，等刷到算法1-1再补`.
-
-When a solution is incomplete or only passes partial test cases, mark it clearly with a `// TODO` comment at the top of the file explaining what's missing.
-
-## Commit Workflow
-
-After solving a problem:
-1. Add the `.cpp` file
-2. Update the vcxproj and vcxproj.filters to point to it (see single-file constraint above)
-3. Update `README.md` progress counter — update both:
-   - The chapter row in the progress table (e.g., `5 / 21` → `6 / 21`)
-   - The overall progress line: `**洛谷进度：38 / 271**` and the percentage
-4. Stage all changed files: `git add <cpp-file> <vcxproj> <vcxproj.filters> README.md`
-5. Commit with message format: `完成：<章节> +N题 (<题号列表>)，进度<current>/271`
-
-Example commit message:
-```
-完成：入门3循环结构 +1题 (P1980)，进度38/271
-```
-
 ## Chapter README Convention
 
 Each chapter directory MUST have a `README.md` containing a problem-index table. Each row links to the source file on GitHub:
@@ -127,3 +105,29 @@ Rules:
 - **URL-encode spaces as `%20`** in filenames — e.g., `P4956%20Davor.cpp` not `P4956 Davor.cpp`
 - Update the progress counter in the heading when the chapter's count changes
 - Every chapter README has a "返回总览" link back to the main `README.md`
+
+Note: the 注意点/踩坑 column is for **real** pitfalls you actually hit (wrong approach, missed edge case, language quirk). Leave `-` when nothing noteworthy. Examples: "⚠️ 待完善：n≤50需高精度" / "🔧 连号断裂时 count 忘记重置" / "⚠️ 识别码'X'需要特判".
+
+## Known Problem Issues
+
+Some problems have known limitations noted with `// TODO` comments:
+
+- **P1009 阶乘之和**: n≤50 requires big-integer arithmetic (高精度). Current solution uses `int` and will overflow for larger n. Marked `// TODO: 待完善 — n≤50需要高精度，等刷到算法1-1再补`.
+
+When a solution is incomplete or only passes partial test cases, mark it clearly with a `// TODO` comment at the top of the file explaining what's missing.
+
+## Commit Workflow
+
+After solving a problem:
+1. Add the `.cpp` file
+2. Update the vcxproj and vcxproj.filters to point to it (see single-file constraint above)
+3. Update **both** README files:
+   - **Chapter README**: add a row with 题号, 题目 (GitHub link), 技巧/考点, 注意点/踩坑; update the (X/Y) counter
+   - **Main `README.md`**: update the chapter row (e.g., `5 / 21` → `6 / 21`) and the overall line `**洛谷进度：X / 271**` + percentage
+4. Stage all changed files: `git add <cpp-file> <vcxproj> <vcxproj.filters> <chapter>/README.md README.md`
+5. Commit with message format: `完成：<章节> +N题 (<题号列表>)，进度<current>/271`
+
+Example commit message:
+```
+完成：入门3循环结构 +1题 (P1980)，进度38/271
+```

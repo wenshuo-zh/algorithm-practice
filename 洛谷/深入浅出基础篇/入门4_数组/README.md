@@ -1,6 +1,6 @@
 # 入门4 · 数组
 
-> 进度：7 / 20 🔄 | [返回总览](../../../README.md)
+> 进度：13 / 20 🔄 | [返回总览](../../../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -11,3 +11,9 @@
 | P5727 | [冰雹猜想](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P5727冰雹猜想.cpp) | stack模拟Collatz | - |
 | P5728 | [旗鼓相当的对手](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P5728旗鼓相当的对手.cpp) | 双重循环+条件判断 | 🔧 j<=i 导致自匹配，改 j<i 删 /2（待修） |
 | P5729 | [工艺品制作](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P5729工艺品制作.cpp) | 三维数组标记 | - |
+| P1554 | [梦中的统计](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P1554梦中的统计.cpp) | while %10 /10 取位统计 | - |
+| P1614 | [爱与愁的心痛](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P1614爱与愁的心痛.cpp) | 定长滑动窗口 | 🔧 minn 初值 101 太小，改 1e9 |
+| P2141 | [珠心算测验](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P2141珠心算测验.cpp) | bool数组打表去重 | 🔧 直接计数导致同一数字被多次统计 |
+| P2615 | [神奇的幻方](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P2615神奇的幻方.cpp) | 位置追踪+规则填幻方 | 🔧 遍历扫描+else分支导致逻辑全错 |
+| P2911 | [Bovine Bones G](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P2911%20Bovine%20Bones%20G.cpp) | 三重循环统计频率 | 🔧 输出频率而非和；搜索上界用组合数越界 |
+| P5730 | [显示屏](https://github.com/wenshuo-zh/algorithm-practice/blob/main/洛谷/深入浅出基础篇/入门4_数组/P5730显示屏.cpp) | 三维char数组存字模+按行输出 | - |

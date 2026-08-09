@@ -34,6 +34,17 @@ Each chapter directory contains:
 
 Chapter directories use the pattern `入门N_<中文名称>` (e.g., `入门3_循环结构`). The VS projects exist inside these chapter directories.
 
+**GitHub remote:** `wenshuo-zh/algorithm-practice` on branch `main`.
+
+### Creating a new chapter
+
+When starting a fresh chapter (e.g., 入门5), scaffold in Visual Studio 2022:
+
+1. **Create project:** File → New → Project → "Empty Project" (C++, Windows, Console). Name it exactly `<chapter>.sln` (e.g., `入门5_字符串.sln`), place inside `洛谷/深入浅出基础篇/<chapter>/`.
+2. **Add chapter README.md:** Copy the table template from an existing chapter, set progress to `0 / N`, and add a "返回总览" link.
+3. **Update main README.md:** Add a new row in the 进度总览 table with the chapter's Luogu 题单 link.
+4. **Commit:** `git add` the new directory + main README, commit with message `初始化：<chapter>框架（0/N），进度<X>/271`.
+
 ## Build & Run
 
 ### Via Visual Studio 2022 (primary)
@@ -116,6 +127,13 @@ Some problems have known limitations noted with `// TODO` comments:
 
 When a solution is incomplete or only passes partial test cases, mark it clearly with a `// TODO` comment at the top of the file explaining what's missing.
 
+## Permissions
+
+The following are pre-approved in `.claude/settings.local.json` — no permission prompts needed:
+- `git add/commit/push/pull/remote/branch` operations
+- `WebSearch` (for looking up problem hints)
+- `WebFetch` from `www.luogu.com.cn` (for reading problem statements)
+
 ## Commit Workflow
 
 After solving a problem:
@@ -126,6 +144,7 @@ After solving a problem:
    - **Main `README.md`**: update the chapter row (e.g., `5 / 21` → `6 / 21`) and the overall line `**洛谷进度：X / 271**` + percentage
 4. Stage all changed files: `git add <cpp-file> <vcxproj> <vcxproj.filters> <chapter>/README.md README.md`
 5. Commit with message format: `完成：<章节> +N题 (<题号列表>)，进度<current>/271`
+6. Push: `git push origin main`
 
 Example commit message:
 ```

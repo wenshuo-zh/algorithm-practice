@@ -14,13 +14,13 @@ Progress is tracked in `README.md` — keep it in sync when problems are complet
 刷题/
 ├── 洛谷/
 │   └── 深入浅出基础篇/
-│       ├── 入门1_顺序结构/        # ✅ done
-│       ├── 入门2_分支结构/        # ✅ done
-│       ├── 入门3_循环结构/        # 🔄 in progress
-│       ├── 入门4_数组/            # 🔄 in progress
-│       └── ...                    # future chapters
-├── 力扣/                          # planned
-├── README.md                      # progress tracker
+│       ├── 入门1_顺序结构/
+│       ├── 入门2_分支结构/
+│       ├── 入门3_循环结构/
+│       ├── 入门4_数组/
+│       └── ...
+├── 力扣/
+├── README.md
 ├── CLAUDE.md
 └── .gitignore
 ```

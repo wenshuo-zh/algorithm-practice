@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="P2911 Bovine Bones G.cpp">
+    <ClCompile Include="P1205方块旋转.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

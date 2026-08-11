@@ -82,6 +82,8 @@ Each vcxproj contains **exactly one** `<ClCompile Include="...">` entry because 
 
 Both files must be updated. The vcxproj controls compilation; the filters file controls IDE display. **Never include more than one `<ClCompile>`** — two `.cpp` files in one project = linker error (duplicate `main`).
 
+The `Include` attribute uses the **literal filesystem filename** (spaces written as spaces, not `%20`). URL-encoding (`%20`) is only for GitHub links in README files.
+
 ## Problem Naming Convention
 
 Each `.cpp` file is named: **`<题号><题目简称>.cpp`**
@@ -113,11 +115,36 @@ Each chapter directory MUST have a `README.md` containing a problem-index table.
 Rules:
 - **After solving each problem**, add its row to the chapter README with technique + pitfall notes
 - Link to GitHub blob URL (not raw), so the file renders in the browser
-- **URL-encode spaces as `%20`** in filenames — e.g., `P4956%20Davor.cpp` not `P4956 Davor.cpp`
+- **URL-encode spaces as `%20`** in filenames — e.g., `P4956%20Davor.cpp` not `P4956 Davor.cpp`. This applies ONLY to GitHub URLs; vcxproj `Include` attributes use literal filenames (spaces as-is)
 - Update the progress counter in the heading when the chapter's count changes
 - Every chapter README has a "返回总览" link back to the main `README.md`
 
-Note: the 注意点/踩坑 column is for **real** pitfalls you actually hit (wrong approach, missed edge case, language quirk). Leave `-` when nothing noteworthy. Examples: "⚠️ 待完善：n≤50需高精度" / "🔧 连号断裂时 count 忘记重置" / "⚠️ 识别码'X'需要特判".
+**注意点/踩坑 column — symbol conventions:**
+
+| Symbol | Meaning | When to use |
+|--------|---------|-------------|
+| `-` | No issues | Clean solution, nothing noteworthy |
+| `🔧` | Bug / pitfall | You hit a real bug (wrong approach, off-by-one, overflow, logic error) and fixed it |
+| `⚠️` | Known limitation | Solution is incomplete, passes only partial tests, or has a caveat the reader should know |
+
+Keep notes concise. Examples:
+- `🔧 j<=i 导致自匹配，改 j<i 删 /2（待修）`
+- `⚠️ 待完善：n≤50需高精度，当前int必溢出`
+- `🔧 minn 初值 101 太小，改 1e9`
+
+**Known-bug protocol:** If a README marks a solution with `🔧` and "（待修）" or `⚠️` "待完善", the corresponding `.cpp` file MUST have a `// TODO` comment at the top explaining the issue.
+
+## Main README.md Format
+
+The root `README.md` is the **authoritative progress source** (CLAUDE.md intentionally omits live counts to avoid staleness). It contains:
+
+- **Progress table:** one row per chapter with the Luogu 题单 link, chapter README link, progress fraction, and status
+- **Overall line:** `**洛谷进度：X / 271**` followed by a 10-segment progress bar and percentage
+- **Status values:** `✅ 完成` (completed), `🔄 进行中` (in progress) with optional notes in parentheses
+
+**Progress bar format:** 10 filled/unfilled squares — `🟩` = filled, `⬜` = empty. Calculate: `floor(percentage / 10)` green squares, rest white. Example at 24.4%: `🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜ (24.4%)`
+
+**When updating:** after each commit, update the chapter's row in the 进度总览 table AND the overall `**洛谷进度：X / 271**` line with recalculated bar + percentage.
 
 ## Known Problem Issues
 

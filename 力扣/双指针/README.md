@@ -4,9 +4,9 @@
 
 | 题号 | 题目 | 来源 |
 |------|------|------|
-| 26 | [删除数组中重复的元素](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/26删除数组中重复的元素.cpp) | 数组 |
-| 283 | [移动零](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/283移动零.cpp) | 数组 |
-| 19 | [删除链表的倒数第n个节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/19删除链表的倒数第n个节点.cpp) | 链表 |
-| 141 | [环形链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/141环形链表.cpp) | 链表 |
-| 160 | [相交链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/160相交链表.cpp) | 链表 |
-| 876 | [链表的中间节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/876链表的中间节点.cpp) | 链表 |
+| [26](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) | [删除数组中重复的元素](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/26删除数组中重复的元素.cpp) | 数组 |
+| [283](https://leetcode.cn/problems/move-zeroes/) | [移动零](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/283移动零.cpp) | 数组 |
+| [19](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [删除链表的倒数第n个节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/19删除链表的倒数第n个节点.cpp) | 链表 |
+| [141](https://leetcode.cn/problems/linked-list-cycle/) | [环形链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/141环形链表.cpp) | 链表 |
+| [160](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [相交链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/160相交链表.cpp) | 链表 |
+| [876](https://leetcode.cn/problems/middle-of-the-linked-list/) | [链表的中间节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/876链表的中间节点.cpp) | 链表 |

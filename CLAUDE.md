@@ -4,7 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-C++ algorithm practice (刷题) on [洛谷 (Luogu)](https://www.luogu.com.cn/). Goal: complete all **271 problems** in Luogu's "深入浅出基础篇" series. Each chapter is its own Visual Studio project.
+C++ algorithm practice (刷题) across two tracks:
+
+- **洛谷 (Luogu)** — goal: complete all **271 problems** in Luogu's "深入浅出基础篇" series. Each chapter is its own Visual Studio project.
+- **力扣 (LeetCode)** — data-structure problems organized by topic (see [力扣 section](#力扣-leetcode) below).
 
 Progress is tracked in `README.md` — keep it in sync when problems are completed. **README.md is the authoritative progress source**; CLAUDE.md intentionally omits live counts to avoid staleness.
 
@@ -20,6 +23,9 @@ Progress is tracked in `README.md` — keep it in sync when problems are complet
 │       ├── 入门4_数组/
 │       └── ...
 ├── 力扣/
+│   ├── 数组/ 链表/ 字符串/ 哈希表/ 栈与队列/ 树/   ← 按数据结构分类的题目 .cpp
+│   ├── 算法/                                       ← 技巧索引（双指针、回溯等），每技巧一个 .md
+│   └── README.md                                   ← 力扣总览（数据结构 + 算法两个表）
 ├── README.md
 ├── CLAUDE.md
 └── .gitignore
@@ -44,6 +50,19 @@ When starting a fresh chapter (e.g., 入门5), scaffold in Visual Studio 2022:
 2. **Add chapter README.md:** Copy the table template from an existing chapter, set progress to `0 / N`, and add a "返回总览" link.
 3. **Update main README.md:** Add a new row in the 进度总览 table with the chapter's Luogu 题单 link.
 4. **Commit:** `git add` the new directory + main README, commit with message `初始化：<chapter>框架（0/N），进度<X>/271`.
+
+## 力扣 (LeetCode)
+
+The `力扣/` directory is organized by **data-structure topic**, not by Luogu-style numbered chapters. Two kinds of content:
+
+- **数据结构 directories** (`数组` `链表` `字符串` `哈希表` `栈与队列` `树`): each holds problem `.cpp` files plus a `README.md` index. Each README row links to both the [leetcode.cn](https://leetcode.cn/) problem and the GitHub source file, and has a "返回总览" link back to `力扣/README.md` (one level up — **not** to the root `README.md`).
+- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
+
+**力扣 problem naming** uses `<题号><题目简称>.cpp` **without** the `P`/`B` letter prefix that 洛谷 uses — e.g. `118杨辉三角.cpp`, `26删除数组中重复的元素.cpp`.
+
+**Note:** some 力扣 `.cpp` files are reference snippets, not problems — e.g. `vector.cpp`, `string.cpp`, `栈.cpp`, `先序遍历.cpp`, `头插法_含new和malloc差异.cpp`. Don't treat these as named problems when updating READMEs.
+
+The `力扣/README.md` tracks two tables: 数据结构 (with per-topic 已解 counts) and 算法 & 技巧 (index links). Keep both in sync when adding problems or techniques.
 
 ## Build & Run
 
@@ -86,11 +105,13 @@ The `Include` attribute uses the **literal filesystem filename** (spaces written
 
 ## Problem Naming Convention
 
-Each `.cpp` file is named: **`<题号><题目简称>.cpp`**
+**洛谷** `.cpp` files are named **`<题号><题目简称>.cpp`**:
 
 - **P####**: Standard problems (e.g., `P1001A+Bproblem.cpp`)
 - **B####**: Basic problems (e.g., `B2002HelloWorld.cpp`)
 - Always include the letter prefix — `P5711闰年判断.cpp`, not `5711闰年判断.cpp`
+
+**力扣** `.cpp` files use the same `<题号><题目简称>.cpp` shape but **without** the letter prefix — e.g. `118杨辉三角.cpp` (see [力扣 section](#力扣-leetcode)).
 
 ## Coding Conventions
 

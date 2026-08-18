@@ -58,9 +58,9 @@ The `力扣/` directory is organized by **data-structure topic**, not by Luogu-s
 - **数据结构 directories** (`数组` `链表` `字符串` `哈希表` `栈与队列` `树`): each holds problem `.cpp` files plus a `README.md` index. Each README row links to both the [leetcode.cn](https://leetcode.cn/) problem and the GitHub source file, and has a "返回总览" link back to `力扣/README.md` (one level up — **not** to the root `README.md`).
 - **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
 
-**力扣 problem naming** uses `<题号><题目简称>.cpp` **without** the `P`/`B` letter prefix that 洛谷 uses — e.g. `118杨辉三角.cpp`, `26删除数组中重复的元素.cpp`.
+**力扣 problem naming** uses `<题号><题目简称>.cpp` **without** the `P`/`B` letter prefix that 洛谷 uses — e.g. `118杨辉三角.cpp`, `26删除数组中重复的元素.cpp`. 剑指 Offer / 面试题 problems keep their `LCR` prefix (e.g. `LCR149彩灯装饰记录I.cpp`) rather than dropping it.
 
-**Note:** some 力扣 `.cpp` files are reference snippets, not problems — e.g. `vector.cpp`, `string.cpp`, `栈.cpp`, `先序遍历.cpp`, `头插法_含new和malloc差异.cpp`. Don't treat these as named problems when updating READMEs.
+**Note:** some 力扣 `.cpp` files are reference snippets, not problems — they're named after a data structure / concept instead of a numbered problem (e.g. `vector.cpp`, `string.cpp`, `栈.cpp`, `队列.cpp`, `deque双端队列.cpp`, `哈希表.cpp`, `先序遍历.cpp`, `中序遍历.cpp`, `后序遍历.cpp`, `层序遍历.cpp`, `树基础概念.cpp`, `自平衡二叉搜索树.cpp`, `头插法_含new和malloc差异.cpp`, `尾插法_虚头节点.cpp`, `用栈实现链表头插法.cpp`). Don't treat these as named problems when updating READMEs.
 
 The `力扣/README.md` tracks two tables: 数据结构 (with per-topic 已解 counts) and 算法 & 技巧 (index links). Keep both in sync when adding problems or techniques.
 
@@ -76,7 +76,14 @@ Open the chapter's `.sln` (e.g., `入门3_循环结构/入门3_循环结构.sln`
 cl /EHsc /std:c++17 /Fe:out.exe <path-to-cpp>
 ```
 
-Note: Chinese-character paths may cause issues with `cl`; when in doubt, use VS or run from within the chapter directory.
+Notes:
+- `cl` is only on PATH after the MSVC environment is initialized (VS Developer Command Prompt, or `vcvars64.bat`). If Git Bash can't find `cl`, fall back to VS or run inside the chapter directory.
+- Chinese-character paths may cause issues with `cl`; when in doubt, run from within the chapter directory and reference the `.cpp` by bare filename.
+- **Quick single-file verify (no VS needed):** compile to a temp path and run, e.g.
+  ```
+  cl /EHsc /std:c++17 /Fe:/tmp/test.exe "P1603斯诺登的密码.cpp" && /tmp/test.exe < sample.txt
+  ```
+  This is the fastest way to confirm a solution compiles and passes sample input before committing.
 
 ## The single-file constraint — CRITICAL
 

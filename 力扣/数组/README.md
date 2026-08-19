@@ -1,6 +1,6 @@
 # 数组
 
-> 进度：6 | [返回总览](../README.md)
+> 进度：8 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -10,3 +10,5 @@
 | [383](https://leetcode.cn/problems/ransom-note/) | [赎金信](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/383赎金信.cpp) | 哈希计数 | - |
 | [27](https://leetcode.cn/problems/remove-element/) | [移除元素](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/27移除元素.cpp) | 双指针（快慢指针覆盖） | - |
 | [704](https://leetcode.cn/problems/binary-search/) | [二分查找](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/704二分查找.cpp) | 二分查找（两种区间边界） | - |
+| [209](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [长度最小的子数组](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/209长度最小的子数组.cpp) | 滑动窗口（双指针） | 🔧 暴力O(n²)超时，改用滑动窗口O(n) |
+| [977](https://leetcode.cn/problems/squares-of-a-sorted-array/) | [有序数组的平方](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/数组/977有序数组的平方.cpp) | 双指针（两端向中间） | - |

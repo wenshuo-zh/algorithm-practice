@@ -56,9 +56,11 @@ When starting a fresh chapter (e.g., 入门5), scaffold in Visual Studio 2022:
 The `力扣/` directory is organized by **data-structure topic**, not by Luogu-style numbered chapters. Two kinds of content:
 
 - **数据结构 directories** (`数组` `链表` `字符串` `哈希表` `栈与队列` `树`): each holds problem `.cpp` files plus a `README.md` index. Each README row links to both the [leetcode.cn](https://leetcode.cn/) problem and the GitHub source file, and has a "返回总览" link back to `力扣/README.md` (one level up — **not** to the root `README.md`).
-- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
+- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算、前缀和). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
 
 **力扣 problem naming** uses `<题号><题目简称>.cpp` **without** the `P`/`B` letter prefix that 洛谷 uses — e.g. `118杨辉三角.cpp`, `26删除数组中重复的元素.cpp`. 剑指 Offer / 面试题 problems keep their `LCR` prefix (e.g. `LCR149彩灯装饰记录I.cpp`) rather than dropping it.
+
+**卡码网 problems** (kamacoder.com，代码随想录配套题单) use a `卡码网<N><题目简称>.cpp` prefix and live in the same data-structure directory as 力扣 problems — e.g. `卡码网44开发商购买土地.cpp`, `卡码网58区间和.cpp`。
 
 **Note:** some 力扣 `.cpp` files are reference snippets, not problems — they're named after a data structure / concept instead of a numbered problem (e.g. `vector.cpp`, `string.cpp`, `栈.cpp`, `队列.cpp`, `deque双端队列.cpp`, `哈希表.cpp`, `先序遍历.cpp`, `中序遍历.cpp`, `后序遍历.cpp`, `层序遍历.cpp`, `树基础概念.cpp`, `自平衡二叉搜索树.cpp`, `头插法_含new和malloc差异.cpp`, `尾插法_虚头节点.cpp`, `用栈实现链表头插法.cpp`). Don't treat these as named problems when updating READMEs.
 

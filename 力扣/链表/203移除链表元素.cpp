@@ -8,9 +8,10 @@ struct ListNode {
 
 class Solution {
 public:
+    // 虚头节点：统一处理删除头节点和中间节点的情况。
     ListNode* removeElements(ListNode* head, int val) {
-        ListNode* dummyHead = new ListNode(0, head);
-        ListNode* temp = dummyHead;
+        ListNode dummyHead(0, head);
+        ListNode* temp = &dummyHead;
         while (temp->next) {
             if (temp->next->val == val)
                 temp->next = temp->next->next;
@@ -19,6 +20,15 @@ public:
             else
                 temp = temp->next;
         }
-        return dummyHead->next;
+        return dummyHead.next;
+    }
+
+    // 递归：先处理后继链表，再决定当前节点是否保留。
+    ListNode* removeElementsRecursive(ListNode* head, int val) {
+        if (head == nullptr) {
+            return nullptr;
+        }
+        head->next = removeElementsRecursive(head->next, val);
+        return head->val == val ? head->next : head;
     }
 };

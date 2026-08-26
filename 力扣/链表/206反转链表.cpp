@@ -10,16 +10,40 @@ struct ListNode {
 
 class Solution {
 public:
+    // 双指针原地反转，pre 始终指向已反转部分的头节点。
     ListNode* reverseList(ListNode* head) {
-        ListNode* dummyHead = new ListNode;
-        dummyHead->next = nullptr;
-        for (ListNode* i = head; i; i = i->next) {
-            ListNode* p = new ListNode;
-            p->val = i->val;
-            p->next = dummyHead->next;
-            dummyHead->next = p;
+        ListNode* pre = nullptr;
+        ListNode* cur = head;
+        while (cur != nullptr) {
+            ListNode* next = cur->next;
+            cur->next = pre;
+            pre = cur;
+            cur = next;
         }
-        return dummyHead->next;
+        return pre;
     }
-    
+
+    // 头插法：复用原链表节点，dummyHead 的 next 始终是新链表头。
+    ListNode* reverseListByHeadInsert(ListNode* head) {
+        ListNode dummyHead;
+        ListNode* cur = head;
+        while (cur != nullptr) {
+            ListNode* next = cur->next;
+            cur->next = dummyHead.next;
+            dummyHead.next = cur;
+            cur = next;
+        }
+        return dummyHead.next;
+    }
+
+    // 复制节点再头插，不修改原链表，但需要 O(n) 额外空间。
+    ListNode* reverseListByCopy(ListNode* head) {
+        ListNode dummyHead;
+        for (ListNode* cur = head; cur != nullptr; cur = cur->next) {
+            ListNode* node = new ListNode(cur->val);
+            node->next = dummyHead.next;
+            dummyHead.next = node;
+        }
+        return dummyHead.next;
+    }
 };

@@ -1,6 +1,6 @@
 # 树
 
-> 进度：23 | [返回总览](../README.md)
+> 进度：25 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -27,3 +27,5 @@
 | [701](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) | [二叉搜索树的插入操作](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/701二叉搜索树的插入操作.cpp) | BST递归插入 | - |
 | [LCR149](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) | [彩灯装饰记录I](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/LCR149彩灯装饰记录I.cpp) | 层序遍历 | - |
 | [LCR150](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) | [彩灯装饰记录II](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/LCR150彩灯装饰记录II.cpp) | 层序遍历+分层 | - |
+| [700](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [二叉搜索树中的搜索](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/700二叉搜索树中的搜索_递归.cpp) | BST递归、迭代搜索 | 利用左小右大的性质缩小范围 |
+| [98](https://leetcode.cn/problems/validate-binary-search-tree/) | [验证二叉搜索树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/98验证二叉搜索树_递归.cpp) | 中序遍历 | BST中序遍历必须严格递增 |

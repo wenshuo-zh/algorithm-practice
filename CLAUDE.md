@@ -56,9 +56,31 @@ When starting a fresh chapter (e.g., 入门5), scaffold in Visual Studio 2022:
 The `力扣/` directory is organized by **data-structure topic**, not by Luogu-style numbered chapters. Two kinds of content:
 
 - **数据结构 directories** (`数组` `链表` `字符串` `哈希表` `栈与队列` `树`): each holds problem `.cpp` files plus a `README.md` index. Each README row links to both the [leetcode.cn](https://leetcode.cn/) problem and the GitHub source file, and has a "返回总览" link back to `力扣/README.md` (one level up — **not** to the root `README.md`).
-- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算、前缀和). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
+- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算、前缀和、单调栈、图论). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
 
 **力扣 problem naming** uses `<题号><题目简称>.cpp` **without** the `P`/`B` letter prefix that 洛谷 uses — e.g. `118杨辉三角.cpp`, `26删除数组中重复的元素.cpp`. 剑指 Offer / 面试题 problems keep their `LCR` prefix (e.g. `LCR149彩灯装饰记录I.cpp`) rather than dropping it.
+
+### One file per problem — 一题多解写在一起
+
+**Same problem, multiple solutions → one single `.cpp` file.** When a problem has more than one solution (递归/迭代, 双指针/哈希法, 填边法/缩圈法, …), write them all into the **same** `<题号><题目简称>.cpp` as parallel `class Solution` blocks, each preceded by a `//` comment naming the approach:
+
+```cpp
+// 递归：中序遍历收集到数组，再检查是否严格递增
+class Solution {
+public:
+    bool isValidBST(TreeNode* root) { /* ... */ }
+};
+
+// 迭代：用栈模拟中序遍历
+class Solution {
+public:
+    bool isValidBST(TreeNode* root) { /* ... */ }
+};
+```
+
+Never split a problem into `<题号><题目简称>_<解法>.cpp` files — that is the pattern this convention replaces.
+
+Duplicate `class Solution` definitions in one file **do not compile. That is intentional and fine** — compilation is a non-goal for `力扣/` files. Each block is meant to be pasted back into LeetCode verbatim, so keep the original method names (`removeElements`, `reverseList`, …) rather than renaming them per approach. Optimize for readability and paste-ability, not for the file building.
 
 **卡码网 problems** (kamacoder.com，代码随想录配套题单) use a `卡码网<N><题目简称>.cpp` prefix and live in the same data-structure directory as 力扣 problems — e.g. `卡码网44开发商购买土地.cpp`, `卡码网58区间和.cpp`。
 

@@ -24,6 +24,7 @@ Progress is tracked in `README.md` — keep it in sync when problems are complet
 │       └── ...
 ├── 力扣/
 │   ├── 数组/ 链表/ 字符串/ 哈希表/ 栈与队列/ 树/   ← 按数据结构分类的题目 .cpp
+│   ├── 回溯/ 贪心/ 动态规划/ 单调栈/ 图论/         ← 以技巧为主要分类的题目 .cpp
 │   ├── 算法/                                       ← 技巧索引（双指针、回溯等），每技巧一个 .md
 │   └── README.md                                   ← 力扣总览（数据结构 + 算法两个表）
 ├── README.md
@@ -56,7 +57,8 @@ When starting a fresh chapter (e.g., 入门5), scaffold in Visual Studio 2022:
 The `力扣/` directory is organized by **data-structure topic**, not by Luogu-style numbered chapters. Two kinds of content:
 
 - **数据结构 directories** (`数组` `链表` `字符串` `哈希表` `栈与队列` `树`): each holds problem `.cpp` files plus a `README.md` index. Each README row links to both the [leetcode.cn](https://leetcode.cn/) problem and the GitHub source file, and has a "返回总览" link back to `力扣/README.md` (one level up — **not** to the root `README.md`).
-- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算、前缀和、单调栈、图论). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning data-structure directory) but do **not** contain the `.cpp` files themselves.
+- **技巧 directories** (`回溯` `贪心` `动态规划` `单调栈` `图论`): same shape as the data-structure directories — problem `.cpp` files plus a `README.md` index. These hold problems whose **primary** classification is the technique rather than a data structure (e.g. 全排列、组合、子集 for 回溯). A problem already homed in a data-structure directory (e.g. 257二叉树的所有路径 is a 树 problem solved with backtracking) stays there and is only cross-referenced — never move it.
+- **算法/ directory**: one `.md` per technique (双指针、滑动窗口、二分查找、排序、回溯、模拟、动态规划、贪心、位运算、前缀和、单调栈、图论). These are **index-only** — they cross-reference problems (with a `来源` column pointing at the owning directory, which may now be either a data-structure or a technique directory) but do **not** contain the `.cpp` files themselves.
 
 **力扣 problem naming** uses `<题号><题目简称>.cpp` **without** the `P`/`B` letter prefix that 洛谷 uses — e.g. `118杨辉三角.cpp`, `26删除数组中重复的元素.cpp`. 剑指 Offer / 面试题 problems keep their `LCR` prefix (e.g. `LCR149彩灯装饰记录I.cpp`) rather than dropping it.
 

@@ -24,7 +24,7 @@
 | [116](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) | [填充每个节点的下一个右侧节点指针](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/116填充每个节点的下一个右侧节点指针.cpp) | 层序遍历 | 每层最后一个节点不连接 next |
 | [111](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | [二叉树的最小深度](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/111二叉树的最小深度.cpp) | BFS | 遇到第一个叶子节点即可返回 |
 | [530](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) | [二叉搜索树的最小绝对差](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/530二叉搜索树的最小绝对差.cpp) | 中序遍历+相邻差 | - |
-| [701](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) | [二叉搜索树的插入操作](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/701二叉搜索树的插入操作.cpp) | BST递归插入 | - |
+| [701](https://leetcode.cn/problems/insert-into-a-binary-search-tree/) | [二叉搜索树的插入操作](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/701二叉搜索树的插入操作_递归.cpp) | BST递归、迭代插入 | 空树时新节点直接作根 |
 | [LCR149](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) | [彩灯装饰记录I](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/LCR149彩灯装饰记录I.cpp) | 层序遍历 | - |
 | [LCR150](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) | [彩灯装饰记录II](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/LCR150彩灯装饰记录II.cpp) | 层序遍历+分层 | - |
 | [700](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [二叉搜索树中的搜索](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/700二叉搜索树中的搜索_递归.cpp) | BST递归、迭代搜索 | 利用左小右大的性质缩小范围 |

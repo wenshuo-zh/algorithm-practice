@@ -1,72 +1,41 @@
-#include<bits\stdc++.h>
-using namespace std;
-
-
-//ÊÕËõÉÏÏÂ×óÓÒ ËÄÌõ±ß½ç
+// å¡«è¾¹æ³•ï¼šä¾æ¬¡å¡«ä¸Šã€å³ã€ä¸‹ã€å·¦å››æ¡è¾¹ï¼Œæ¯å¡«å®Œä¸€æ¡è¾¹å°±æ”¶ç¼©å¯¹åº”è¾¹ç•Œ
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
-        vector<vector<int>>nums(n, vector<int>(n));
-        //±ß½ç×ó±ÕÓÒ¿ª   ÉÏ->ÓÒ->ÏÂ->×ó 
+        vector<vector<int>> result(n, vector<int>(n));
         int up = 0, down = n, left = 0, right = n;
-        int val = 1;
-        while (val <= n * n) {
-            //¹Ì¶¨ÉÏ±ß½ç£ºĞĞup£¬±éÀú[left , right)£¬½áÊøup++
-            for (int j = left; j < right; j++) {
-                nums[up][j] = val;
-                val++;
-            }
+        int value = 1;
+        while (value <= n * n) {
+            for (int j = left; j < right; j++) result[up][j] = value++;
             up++;
-            //¹Ì¶¨ÓÒ±ß½ç£ºÁĞright - 1£¬±éÀú[up , down)£¬½áÊøright--
-            for (int i = up; i < down; i++) {
-                nums[i][right - 1] = val;
-                val++;
-            }
+            for (int i = up; i < down; i++) result[i][right - 1] = value++;
             right--;
-            //¹Ì¶¨ÏÂ±ß½ç£ºĞĞdown - 1£¬·´Ïò±éÀú[left , right)£¬½áÊødown--
-            for (int j = right - 1; j >= left; j--) {
-                nums[down - 1][j] = val;
-                val++;
-            }
+            for (int j = right - 1; j >= left; j--) result[down - 1][j] = value++;
             down--;
-            //¹Ì¶¨×ó±ß½ç£ºÁĞleft - 1£¬·´Ïò±éÀú[up , down)£¬½áÊøleft++
-            for (int i = down - 1; i >= up; i--) {
-                nums[i][left] = val;
-                val++;
-            }
+            for (int i = down - 1; i >= up; i--) result[i][left] = value++;
             left++;
         }
-        return nums;
+        return result;
     }
 };
 
-
-//ËõÈ¦
+// ç¼©åœˆæ³•ï¼šloop æ§åˆ¶åœˆæ•°ï¼Œæ¯åœˆç»“æŸåèµ·å§‹ç‚¹åç§»ã€è¾¹é•¿åç§»é‡åŠ ä¸€ï¼Œä¸­å¿ƒç‚¹å•ç‹¬å¤„ç†
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
-        vector<vector<int>>vec(n, vector<int>(n));
-        int loop = n / 2;//È¦Êı
-        int val = 1;
-        int startX = 0, startY = 0;
-        int offset = 1;//¿ØÖÆÃ¿Ìõ±ßµÄ±éÀú³¤¶È
+        vector<vector<int>> result(n, vector<int>(n));
+        int loop = n / 2, value = 1;
+        int start = 0, offset = 1;
         while (loop--) {
-            int i = startX;
-            int j = startY;
-            for (; j < n - offset; j++)vec[i][j] = val++;
-            for (; i < n - offset; i++)vec[i][j] = val++;
-            //´ËÊ±i jÒÑ¾­ÊÇn-offset,Ñ­»·ÖĞ²»ÓÃÔÙĞ´
-            for (; j > startY; j--)vec[i][j] = val++;
-            for (;i>startX; i--)vec[i][j] = val++;
-            //×ßÍêÒ»È¦ÒÔºó±ß½çÏòÄÚËõĞ¡
-            startX++;
-            startY++;
+            int i = start, j = start;
+            for (; j < n - offset; j++) result[i][j] = value++;
+            for (; i < n - offset; i++) result[i][j] = value++;
+            for (; j > start; j--) result[i][j] = value++;
+            for (; i > start; i--) result[i][j] = value++;
+            start++;
             offset++;
         }
-        //Ìî³äÖĞĞÄµã
-        if (n % 2 != 0) {
-            vec[n / 2][n / 2] = val;
-        }
-        return vec;
+        if (n % 2) result[n / 2][n / 2] = value;
+        return result;
     }
 };

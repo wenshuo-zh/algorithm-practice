@@ -1,4 +1,3 @@
-
 //Definition for singly-linked list.
 struct ListNode {
     int val;
@@ -8,9 +7,9 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+// 双指针原地反转，pre 始终指向已反转部分的头节点
 class Solution {
 public:
-    // 双指针原地反转，pre 始终指向已反转部分的头节点。
     ListNode* reverseList(ListNode* head) {
         ListNode* pre = nullptr;
         ListNode* cur = head;
@@ -22,9 +21,12 @@ public:
         }
         return pre;
     }
+};
 
-    // 头插法：复用原链表节点，dummyHead 的 next 始终是新链表头。
-    ListNode* reverseListByHeadInsert(ListNode* head) {
+// 头插法：复用原链表节点，虚头节点的 next 始终是新链表头
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
         ListNode dummyHead;
         ListNode* cur = head;
         while (cur != nullptr) {
@@ -35,9 +37,12 @@ public:
         }
         return dummyHead.next;
     }
+};
 
-    // 复制节点再头插，不修改原链表，但需要 O(n) 额外空间。
-    ListNode* reverseListByCopy(ListNode* head) {
+// 复制节点后头插：不修改原链表，但需要 O(n) 额外空间
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
         ListNode dummyHead;
         for (ListNode* cur = head; cur != nullptr; cur = cur->next) {
             ListNode* node = new ListNode(cur->val);

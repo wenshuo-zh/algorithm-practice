@@ -1,42 +1,30 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-//×ó±ÕÓÒ¿ª
-//Ê±¼ä¸´ÔÓ¶ÈO(log n) ¿Õ¼ä¸´ÔÓ¶ÈO(1)
+// å·¦é—­å³å¼€åŒºé—´ [left, right)ï¼Œå¾ªç¯æ¡ä»¶ left < right
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        int left = 0;
-        int right = nums.size();
-        //left == rightÃ»ÓĞÒâÒå£¬¼´[left,right)Çø¼äÎª¿Õ£¬ËùÒÔÑ­»·Ìõ¼ş²»°üº¬=
+        int left = 0, right = nums.size();
         while (left < right) {
-            int mid = (left + right) / 2;
-            if (nums[mid] == target)return mid;
-            //mid±È¶ÔÍê±Ï£¬ÏÂÒ»ÂÖÇø¼äÀï²»ÄÜ°üº¬mid
-            else if (nums[mid] > target) {
-                right = mid;//ĞÂÇø¼ä[left,mid)
-            }
-            else {
-                left = mid + 1;//ĞÂÇø¼ä[mid+1,right)
-            }
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) return mid;
+            // mid å·²ç»æ¯”è¿‡ï¼Œå³è¾¹ç•Œæ”¶ç¼©ä¸º mid
+            if (nums[mid] > target) right = mid;
+            else left = mid + 1;
         }
         return -1;
     }
 };
 
-//×ó±ÕÓÒ±Õ
-//Ê±¼ä¸´ÔÓ¶ÈO(log n) ¿Õ¼ä¸´ÔÓ¶ÈO(1)
+// å·¦é—­å³é—­åŒºé—´ [left, right]ï¼Œå¾ªç¯æ¡ä»¶ left <= right
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
         int left = 0, right = nums.size() - 1;
-        //left == rightÓĞÒâÒå£¬¼´[left,right]ÄÚÓĞÖµ£¬Ñ­»·¼ÌĞøÖ´ĞĞ
         while (left <= right) {
-            int mid = (left + right) / 2;
-            if (nums[mid] == target)return mid;
-            //ĞÂÇø¼ä²»Òª´øÉÏmid,ÒòÎªmidÒÑ¾­±È¶Ô
-            else if (nums[mid] > target)right = mid - 1;//[left,mid - 1]
-            else left = mid + 1;//[mid + 1,right]
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) return mid;
+            // mid å·²ç»æ¯”è¿‡ï¼Œå³è¾¹ç•Œæ”¶ç¼©ä¸º mid - 1
+            if (nums[mid] > target) right = mid - 1;
+            else left = mid + 1;
         }
         return -1;
     }

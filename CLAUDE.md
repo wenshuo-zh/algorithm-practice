@@ -86,7 +86,11 @@ Duplicate `class Solution` definitions in one file **do not compile. That is int
 
 **Note:** some 力扣 `.cpp` files are reference snippets, not problems — they're named after a data structure / concept instead of a numbered problem (e.g. `vector.cpp`, `string.cpp`, `栈.cpp`, `队列.cpp`, `deque双端队列.cpp`, `哈希表.cpp`, `先序遍历.cpp`, `中序遍历.cpp`, `后序遍历.cpp`, `层序遍历.cpp`, `树基础概念.cpp`, `自平衡二叉搜索树.cpp`, `头插法_含new和malloc差异.cpp`, `尾插法_虚头节点.cpp`, `用栈实现链表头插法.cpp`). Don't treat these as named problems when updating READMEs.
 
-The `力扣/README.md` tracks two tables: 数据结构 (with per-topic 已解 counts) and 算法 & 技巧 (index links). Keep both in sync when adding problems or techniques.
+The `力扣/README.md` and the root `README.md` both track the same three tables:
+
+- **力扣题目** — data-structure rows (数组/链表/字符串/哈希表/栈与队列/树) with per-topic 已解 counts, followed by **technique rows** (回溯/贪心/动态规划/单调栈/图论) linking into `力扣/算法/*.md`. The heading total (e.g. `（已解 77 题）`) counts **only the data-structure rows** — technique rows are a second axis over the same problems and **overlap** with them, so they are deliberately excluded from the sum. Both READMEs carry a note saying so; keep it.
+- **卡码网题目** — 卡码网 problems, split out from the 力扣 counts above (the per-topic sub-README headers count both together, e.g. 数组 `进度：11` = 9 力扣 + 2 卡码网).
+- **算法 & 技巧** — all 12 techniques as index links. This table lives only in `力扣/README.md`; the root README instead carries a one-line pointer to it.
 
 ## Build & Run
 

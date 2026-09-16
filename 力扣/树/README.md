@@ -1,6 +1,6 @@
 # 树
 
-> 进度：25 | [返回总览](../README.md)
+> 进度：34 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -29,3 +29,12 @@
 | [LCR150](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) | [彩灯装饰记录II](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/LCR150彩灯装饰记录II.cpp) | 层序遍历+分层 | - |
 | [700](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [二叉搜索树中的搜索](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/700二叉搜索树中的搜索_递归.cpp) | BST递归、迭代搜索 | 利用左小右大的性质缩小范围 |
 | [98](https://leetcode.cn/problems/validate-binary-search-tree/) | [验证二叉搜索树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/98验证二叉搜索树_递归.cpp) | 中序遍历 | BST中序遍历必须严格递增 |
+| [501](https://leetcode.cn/problems/find-mode-in-binary-search-tree/) | [二叉搜索树中的众数](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/501二叉搜索树中的众数.cpp) | 中序遍历 + 计数 | 众数可能不止一个；count 超过 maxCount 时要清空结果集 |
+| [235](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [二叉搜索树的最近公共祖先](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/235二叉搜索树的最近公共祖先.cpp) | BST 左小右大 | 第一次落在 p、q 之间的节点就是祖先 |
+| [450](https://leetcode.cn/problems/delete-node-in-a-bst/) | [删除二叉搜索树中的节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/450删除二叉搜索树中的节点_值替换法.cpp) | BST 删除 | 左右都不空：右子树最小节点替换（值替换法），或左子树接到右子树最左端（子树搬迁法） |
+| [669](https://leetcode.cn/problems/trim-a-binary-search-tree/) | [修剪二叉搜索树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/669修剪二叉搜索树_递归.cpp) | 递归 / 迭代 | 小于 low 用右子树顶替，大于 high 用左子树顶替 |
+| [108](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [将有序数组转换为二叉搜索树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/108将有序数组转换为二叉搜索树.cpp) | 分治 | 升序数组中间元素一定是根 |
+| [538](https://leetcode.cn/problems/convert-bst-to-greater-tree/) | [把二叉搜索树转换为累加树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/538把二叉搜索树转换为累加树_递归.cpp) | 反中序遍历 | 右 → 中 → 左 的顺序累加 |
+| [654](https://leetcode.cn/problems/maximum-binary-tree/) | [最大二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/654最大二叉树.cpp) | 分治递归 | 区间最大值作根后切分数组 |
+| [617](https://leetcode.cn/problems/merge-two-binary-trees/) | [合并二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/617合并二叉树.cpp) | 递归 | 两树都空返回空，只有一侧为空直接返回另一侧 |
+| [236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [二叉树的最近公共祖先](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/236二叉树的最近公共祖先.cpp) | 后序回溯 | 左右子树都返回信号时，当前节点即祖先 |

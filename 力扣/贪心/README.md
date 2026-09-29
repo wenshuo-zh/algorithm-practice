@@ -1,6 +1,6 @@
 # 贪心
 
-> 进度：8 | [返回总览](../README.md)
+> 进度：11 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -12,5 +12,8 @@
 | [45](https://leetcode.cn/problems/jump-game-ii/) | [跳跃游戏 II](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/贪心/45跳跃游戏II.cpp) | 分层覆盖范围 | 只遍历到 `n - 2`，终点不需要再跳 |
 | [1005](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/) | [K 次取反后最大化的数组和](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/贪心/1005K次取反后最大化的数组和.cpp) | 排序 + 取反 | 剩余次数为奇数时，翻转绝对值最小的元素 |
 | [134](https://leetcode.cn/problems/gas-station/) | [加油站](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/贪心/134加油站.cpp) | 前缀和 / 贪心 | 总油量小于总消耗时无解；两种解法写在同一文件 |
+| [135](https://leetcode.cn/problems/candy/) | [分发糖果](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/贪心/135分发糖果.cpp) | 两趟贪心 | 第二趟必须用 `max` 取大，直接赋值会覆盖第一趟已合法的结果 |
+| [860](https://leetcode.cn/problems/lemonade-change/) | [柠檬水找零](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/贪心/860柠檬水找零.cpp) | 优先用大面额找零 | 找 20 元时优先「一张 10 + 一张 5」，10 元只能用于 20 元找零 |
+| [406](https://leetcode.cn/problems/queue-reconstruction-by-height/) | [根据身高重建队列](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/贪心/406根据身高重建队列.cpp) | 排序 + 插入 | 先按身高降序、k 升序排；vector 与 list 两种解法写在同一文件 |
 
 > 本目录存放以贪心为**主要分类**的题目。其他目录里用贪心解的题仍留在原目录，另在 [算法/贪心.md](../算法/贪心.md) 中交叉索引。

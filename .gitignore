@@ -19,6 +19,5 @@ Release/
 # Windows缩略图
 Thumbs.db
 
-# 仅供本地使用的说明与 AI 工作记录
+# 仅供本地使用的 AI 工作说明
 /CLAUDE.md
-/README.md

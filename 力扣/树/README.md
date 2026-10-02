@@ -38,3 +38,9 @@
 | [654](https://leetcode.cn/problems/maximum-binary-tree/) | [最大二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/654最大二叉树.cpp) | 分治递归 | 区间最大值作根后切分数组 |
 | [617](https://leetcode.cn/problems/merge-two-binary-trees/) | [合并二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/617合并二叉树.cpp) | 递归 | 两树都空返回空，只有一侧为空直接返回另一侧 |
 | [236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [二叉树的最近公共祖先](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/236二叉树的最近公共祖先.cpp) | 后序回溯 | 左右子树都返回信号时，当前节点即祖先 |
+
+## 交叉索引（不重复计入本目录进度）
+
+| 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
+|------|------|-----------|------|
+| 968 | [监控二叉树](../贪心/968监控二叉树.cpp) | 后序遍历 + 贪心 | 主要分类为贪心；优先处理未覆盖孩子，最后检查根节点 |

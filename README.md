@@ -80,7 +80,6 @@
 
 ## 环境
 
-- IDE：Visual Studio 2022
 - 语言：C++17
 - 平台：[洛谷](https://www.luogu.com.cn/training/) | 力扣 | 卡码网 | 后续扩展
 

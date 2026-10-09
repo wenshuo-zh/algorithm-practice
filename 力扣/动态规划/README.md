@@ -1,6 +1,6 @@
 # 动态规划
 
-> 进度：13 | [返回总览](../README.md)
+> 进度：16 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -17,5 +17,8 @@
 | [279](https://leetcode.cn/problems/perfect-squares/) | [完全平方数](279完全平方数.cpp) | 完全背包求最小值 | `dp[0] = 0`，其余状态初始化为较大值 |
 | [139](https://leetcode.cn/problems/word-break/) | [单词拆分](139单词拆分.cpp) | 字符串前缀 DP | `dp[i]` 为真且 `s[i..j-1]` 在字典中时，`dp[j]` 为真 |
 | [卡码网 56](https://kamacoder.com/problempage.php?pid=1056) | [携带矿石资源](卡码网56携带矿石资源.cpp) | 多重背包 | 将每种矿石按数量展开，再按 01 背包倒序更新容量 |
+| [198](https://leetcode.cn/problems/house-robber/) | [打家劫舍](198打家劫舍.cpp) | 线性 DP | `dp[i]` 取偷当前房屋或不偷当前房屋的最大值 |
+| [213](https://leetcode.cn/problems/house-robber-ii/) | [打家劫舍 II](213打家劫舍II.cpp) | 环形线性 DP | 分别计算不偷首和不偷尾的两段区间 |
+| [337](https://leetcode.cn/problems/house-robber-iii/) | [打家劫舍 III](337打家劫舍III.cpp) | 树形 DP | 返回偷与不偷当前节点时的最大金额 |
 
 > 本目录存放以动态规划为**主要分类**的题目（背包、打家劫舍、股票、子序列等）。其他目录里用动规解的题仍留在原目录，另在 [算法/动态规划.md](../算法/动态规划.md) 中交叉索引。

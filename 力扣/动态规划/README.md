@@ -1,6 +1,6 @@
 # 动态规划
 
-> 进度：19 | [返回总览](../README.md)
+> 进度：31 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -23,5 +23,19 @@
 | [121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [买卖股票的最佳时机](121买卖股票的最佳时机.cpp) | 股票 DP：一次交易 | 持有状态只能从初始买入或昨天持有转移 |
 | [122](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [买卖股票的最佳时机 II](122买卖股票的最佳时机II.cpp) | 股票 DP：不限交易次数 | 买入时可使用昨天不持有股票时的利润 |
 | [123](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) | [买卖股票的最佳时机 III](123买卖股票的最佳时机III.cpp) | 股票 DP：至多两次交易 | 五个状态对应两次买入、卖出过程 |
+| [309](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [最佳买卖股票时机含冷冻期](309最佳买卖股票时机含冷冻期.cpp) | 股票 DP：冷冻期 | 持有、不持有、卖出、冷冻期四状态 |
+| [714](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [买卖股票的最佳时机含手续费](714买卖股票的最佳时机含手续费.cpp) | 股票 DP：手续费 | 手续费只扣一次，买入时计入持有状态 |
+| [300](https://leetcode.cn/problems/longest-increasing-subsequence/) | [最长递增子序列](300最长递增子序列.cpp) | 单序列非连续 DP | `dp[i]` 表示以下标 `i` 结尾的最长长度 |
+| [674](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) | [最长连续递增序列](674最长连续递增序列.cpp) | 单数组连续 DP | 断开后当前长度重置为 1 |
+| [718](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | [最长重复子数组](718最长重复子数组.cpp) | 双数组连续 DP | 不相等时状态重置为 0 |
+| [1143](https://leetcode.cn/problems/longest-common-subsequence/) | [最长公共子序列](1143最长公共子序列.cpp) | 双序列非连续 DP | 不相等时取上方和左方最优值 |
+| [1049](https://leetcode.cn/problems/last-stone-weight-ii/) | [最后一块石头的重量 II](1049最后一块石头的重量II.cpp) | 01 背包 | 将石头分成重量尽量接近的两组 |
+| [474](https://leetcode.cn/problems/ones-and-zeroes/) | [一和零](474一和零.cpp) | 二维 01 背包 | 0 和 1 的容量都要倒序遍历 |
+| [518](https://leetcode.cn/problems/coin-change-ii/) | [零钱兑换 II](518零钱兑换II.cpp) | 完全背包组合计数 | 先遍历硬币再遍历金额，避免重复统计排列 |
+| [377](https://leetcode.cn/problems/combination-sum-iv/) | [组合总和 IV](377组合总和IV.cpp) | 完全背包排列计数 | 先遍历金额再遍历物品，统计有序组合 |
+| [322](https://leetcode.cn/problems/coin-change/) | [零钱兑换](322零钱兑换.cpp) | 完全背包最小值 | 不可凑成时返回 -1 |
+| [188](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) | [买卖股票的最佳时机 IV](188买卖股票的最佳时机IV.cpp) | 股票 DP：至多 k 次交易 | 奇数状态买入，偶数状态卖出 |
+| [卡码网 52](https://kamacoder.com/problempage.php?pid=1052) | [携带研究材料](卡码网52携带研究材料.cpp) | 完全背包 | 每种材料可以重复选择，容量正序遍历 |
+| [卡码网 57](https://kamacoder.com/problempage.php?pid=1057) | [爬楼梯](卡码网57爬楼梯.cpp) | 完全背包排列计数 | 外层遍历目标楼层，内层遍历步数 |
 
 > 本目录存放以动态规划为**主要分类**的题目（背包、打家劫舍、股票、子序列等）。其他目录里用动规解的题仍留在原目录，另在 [算法/动态规划.md](../算法/动态规划.md) 中交叉索引。

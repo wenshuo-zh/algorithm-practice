@@ -1,6 +1,6 @@
 # 动态规划
 
-> 进度：31 | [返回总览](../README.md)
+> 进度：38 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -29,6 +29,12 @@
 | [674](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/) | [最长连续递增序列](674最长连续递增序列.cpp) | 单数组连续 DP | 断开后当前长度重置为 1 |
 | [718](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) | [最长重复子数组](718最长重复子数组.cpp) | 双数组连续 DP | 不相等时状态重置为 0 |
 | [1143](https://leetcode.cn/problems/longest-common-subsequence/) | [最长公共子序列](1143最长公共子序列.cpp) | 双序列非连续 DP | 不相等时取上方和左方最优值 |
+| [1035](https://leetcode.cn/problems/uncrossed-lines/) | [不相交的线](1035不相交的线.cpp) | 双序列非连续 DP | 转化为最长公共子序列 |
+| [53](https://leetcode.cn/problems/maximum-subarray/) | [最大子数组和](../贪心/53最大子数组和.cpp) | 单数组连续 DP | 当前元素重新开始或接在前一段后面 |
+| [392](https://leetcode.cn/problems/is-subsequence/) | [判断子序列](392判断子序列.cpp) | 双序列子序列 DP | 只能跳过字符串 `t` 的字符 |
+| [115](https://leetcode.cn/problems/distinct-subsequences/) | [不同的子序列](115不同的子序列.cpp) | 子序列计数 DP | 相等时分为选当前字符和跳过当前字符 |
+| [583](https://leetcode.cn/problems/delete-operation-for-two-strings/) | [两个字符串的删除操作](583两个字符串的删除操作.cpp) | 双序列编辑 DP | 不相等时删除任一字符串当前字符 |
+| [72](https://leetcode.cn/problems/edit-distance/) | [编辑距离](72编辑距离.cpp) | 双序列编辑 DP | 不相等时比较删除、插入、替换 |
 | [1049](https://leetcode.cn/problems/last-stone-weight-ii/) | [最后一块石头的重量 II](1049最后一块石头的重量II.cpp) | 01 背包 | 将石头分成重量尽量接近的两组 |
 | [474](https://leetcode.cn/problems/ones-and-zeroes/) | [一和零](474一和零.cpp) | 二维 01 背包 | 0 和 1 的容量都要倒序遍历 |
 | [518](https://leetcode.cn/problems/coin-change-ii/) | [零钱兑换 II](518零钱兑换II.cpp) | 完全背包组合计数 | 先遍历硬币再遍历金额，避免重复统计排列 |

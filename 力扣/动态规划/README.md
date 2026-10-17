@@ -1,6 +1,6 @@
 # 动态规划
 
-> 进度：39 | [返回总览](../README.md)
+> 进度：41 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -35,6 +35,8 @@
 | [115](https://leetcode.cn/problems/distinct-subsequences/) | [不同的子序列](115不同的子序列.cpp) | 子序列计数 DP | 相等时分为选当前字符和跳过当前字符 |
 | [583](https://leetcode.cn/problems/delete-operation-for-two-strings/) | [两个字符串的删除操作](583两个字符串的删除操作.cpp) | 双序列编辑 DP | 不相等时删除任一字符串当前字符 |
 | [72](https://leetcode.cn/problems/edit-distance/) | [编辑距离](72编辑距离.cpp) | 双序列编辑 DP | 不相等时比较删除、插入、替换 |
+| [647](https://leetcode.cn/problems/palindromic-substrings/) | [回文子串](647回文子串.cpp) | 区间 DP | `dp[i][j]` 表示区间是否为回文串，遍历 `i` 时需从右向左 |
+| [516](https://leetcode.cn/problems/longest-palindromic-subsequence/) | [最长回文子序列](516最长回文子序列.cpp) | 区间 DP | 相等时由区间内层加 2，不相等时取两侧最优值 |
 | [1049](https://leetcode.cn/problems/last-stone-weight-ii/) | [最后一块石头的重量 II](1049最后一块石头的重量II.cpp) | 01 背包 | 将石头分成重量尽量接近的两组 |
 | [474](https://leetcode.cn/problems/ones-and-zeroes/) | [一和零](474一和零.cpp) | 二维 01 背包 | 0 和 1 的容量都要倒序遍历 |
 | [518](https://leetcode.cn/problems/coin-change-ii/) | [零钱兑换 II](518零钱兑换II.cpp) | 完全背包组合计数 | 先遍历硬币再遍历金额，避免重复统计排列 |

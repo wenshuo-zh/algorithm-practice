@@ -1,27 +1,22 @@
-#include <vector>
-using namespace std;
-
+// dfs版本
 class Solution {
+public:
     vector<int> path;
     vector<vector<int>> res;
-
-    void dfs(vector<vector<int>>& graph, int x) {
-        if (x == static_cast<int>(graph.size()) - 1) {
+    void dfs(const vector<vector<int>>& graph, int x, int n){
+        if(x == n){
             res.push_back(path);
             return;
         }
-        for (int next : graph[x]) {
-            path.push_back(next);
-            dfs(graph, next);
+        for(int i = 0; i < graph[x].size(); i++){
+            path.push_back(graph[x][i]);
+            dfs(graph, graph[x][i], n);
             path.pop_back();
         }
     }
-
-public:
     vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
-        path = {0};
-        res.clear();
-        dfs(graph, 0);
+        path.push_back(0);
+        dfs(graph, 0, graph.size()-1);
         return res;
     }
 };

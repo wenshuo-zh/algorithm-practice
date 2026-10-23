@@ -3,6 +3,7 @@
 using namespace std;
 int dir[4][2] = {0, 1 ,1, 0, -1, 0, 0, -1};
 void dfs(vector<vector<int>>& grid, vector<vector<bool>>& visited, int x, int y){
+    if(visited[x][y]) return;
     visited[x][y] = true;
     for(int i = 0; i < 4; i++){
         int nextx = x + dir[i][0];

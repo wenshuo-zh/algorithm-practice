@@ -1,6 +1,6 @@
 # 图论
 
-> 进度：21 | [返回总览](../README.md)
+> 进度：26 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|------|------|
@@ -25,3 +25,8 @@
 | [685](https://leetcode.cn/problems/redundant-connection-ii/) | [冗余连接II](685冗余连接II.cpp) | 入度 + 并查集 | 优先处理入度为 2 |
 | [卡码网 105](https://kamacoder.com/problempage.php?pid=1055) | [有向图的完全可达性](卡码网105有向图的完全可达性.cpp) | DFS 可达性 | 仅判断从 1 可达所有节点 |
 | [卡码网 110](https://kamacoder.com/problempage.php?pid=1060) | [字符串迁移](卡码网110字符串迁移.cpp) | BFS 分层搜索 | 终点必须在字典中 |
+| [207](https://leetcode.cn/problems/course-schedule/) | [课程表](207课程表.cpp) | Kahn 拓扑排序 | 处理节点数判断有环 |
+| [210](https://leetcode.cn/problems/course-schedule-ii/) | [课程表II](210课程表II.cpp) | Kahn 拓扑排序 | 有环返回空数组 |
+| [1584](https://leetcode.cn/problems/min-cost-to-connect-all-points/) | [连接所有点的最小费用](1584连接所有点的最小费用.cpp) | Prim / Kruskal + 并查集 | 曼哈顿距离 |
+| [743](https://leetcode.cn/problems/network-delay-time/) | [网络延迟时间](743网络延迟时间.cpp) | Dijkstra 朴素 / 堆优化 | 跳过过期堆记录 |
+| [卡码网 107](https://kamacoder.com/problempage.php?pid=1057) | [寻找存在的路径](卡码网107寻找存在的路径.cpp) | 并查集 | 根节点相同则连通 |

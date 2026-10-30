@@ -30,14 +30,14 @@
 |------|------|------|
 | 494 | [目标和](力扣/题解/494.目标和.md) | [LeetCode 原题解](https://leetcode.cn/problems/target-sum/solutions/4039154/yi-yu-li-jie-de-zhi-jie-mo-ni-zheng-fu-h-s6yv) |
 
-## 卡码网进度总览（已解 19 题）
+## 卡码网进度总览（已解 25 题）
 
 | 分类 | 已解 | 链接 |
 |------|------|------|
 | 数组 | 2 | [数组](力扣/数组/README.md) |
 | 字符串 | 2 | [字符串](力扣/字符串/README.md) |
 | 动态规划 | 4 | [动态规划](力扣/动态规划/README.md) |
-| 图论 | 11 | [图论](力扣/图论/README.md) |
+| 图论 | 17 | [图论](力扣/图论/README.md) |
 
 ---
 

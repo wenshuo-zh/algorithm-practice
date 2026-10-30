@@ -1,6 +1,6 @@
 # 图论
 
-> 进度：26 | [返回总览](../README.md)
+> 进度：32 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|------|------|
@@ -30,3 +30,7 @@
 | [1584](https://leetcode.cn/problems/min-cost-to-connect-all-points/) | [连接所有点的最小费用](1584连接所有点的最小费用.cpp) | Prim / Kruskal + 并查集 | 曼哈顿距离 |
 | [743](https://leetcode.cn/problems/network-delay-time/) | [网络延迟时间](743网络延迟时间.cpp) | Dijkstra 朴素 / 堆优化 | 跳过过期堆记录 |
 | [卡码网 107](https://kamacoder.com/problempage.php?pid=1057) | [寻找存在的路径](卡码网107寻找存在的路径.cpp) | 并查集 | 根节点相同则连通 |
+| [卡码网 94](https://kamacoder.com/problempage.php?pid=1054) | [城市间货物运输I（Bellman-Ford）](卡码网94城市间货物运输I_bellman_ford.cpp) / [SPFA](卡码网94城市间货物运输I_spfa.cpp) | Bellman-Ford / SPFA | 支持负权边 |
+| [卡码网 95](https://kamacoder.com/problempage.php?pid=1055) | [城市间货物运输II](卡码网95城市间货物运输II.cpp) | Bellman-Ford | 检测负权回路 |
+| [卡码网 97](https://kamacoder.com/problempage.php?pid=1057) | [小明逛公园](卡码网97小明逛公园.cpp) | Floyd | 任意两点最短路 |
+| [卡码网 127](https://kamacoder.com/problempage.php?pid=1087) | [骑士的攻击（BFS）](卡码网127骑士的攻击_bfs.cpp) / [A*](卡码网127骑士的攻击_A星.cpp) | BFS / A* | BFS 在题目数据下超时 |

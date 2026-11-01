@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：0 / 100 | [返回力扣总览](../README.md)
+> 进度：3 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -8,6 +8,9 @@
 
 | 题号 | 题目 | 分类 | 题解 | 状态 |
 |------|------|------|------|------|
+| [1](https://leetcode.cn/problems/two-sum/) | 两数之和 | 哈希表 | [题解](1两数之和.cpp) | 已完成 |
+| [49](https://leetcode.cn/problems/group-anagrams/) | 字母异位词分组 | 哈希表 | [题解](49字母异位词分组.cpp) | 已完成 |
+| [128](https://leetcode.cn/problems/longest-consecutive-sequence/) | 最长连续序列 | 哈希表 | [题解](128最长连续序列.cpp) | 已完成 |
 
 ## 维护规则
 

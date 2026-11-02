@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：3 / 100 | [返回力扣总览](../README.md)
+> 进度：7 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -11,6 +11,10 @@
 | [1](https://leetcode.cn/problems/two-sum/) | 两数之和 | 哈希表 | [题解](1两数之和.cpp) | 已完成 |
 | [49](https://leetcode.cn/problems/group-anagrams/) | 字母异位词分组 | 哈希表 | [题解](49字母异位词分组.cpp) | 已完成 |
 | [128](https://leetcode.cn/problems/longest-consecutive-sequence/) | 最长连续序列 | 哈希表 | [题解](128最长连续序列.cpp) | 已完成 |
+| [283](https://leetcode.cn/problems/move-zeroes/) | 移动零 | 双指针 | [题解](283移动零.cpp) | 已完成 |
+| [11](https://leetcode.cn/problems/container-with-most-water/) | 盛水最多的容器 | 双指针 | [题解](11盛水最多的容器.cpp) | 已完成 |
+| [15](https://leetcode.cn/problems/3sum/) | 三数之和 | 双指针 | [题解](15三数之和.cpp) | 已完成 |
+| [42](https://leetcode.cn/problems/trapping-rain-water/) | 接雨水 | 双指针 / 单调栈 | [题解](42接雨水.cpp) | 已完成 |
 
 ## 维护规则
 

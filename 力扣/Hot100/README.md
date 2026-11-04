@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：9 / 100 | [返回力扣总览](../README.md)
+> 进度：12 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -17,6 +17,9 @@
 | [42](https://leetcode.cn/problems/trapping-rain-water/) | 接雨水 | 双指针 / 单调栈 | [题解](42接雨水.cpp) | 已完成 |
 | [3](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | 无重复字符的最长子串 | 滑动窗口 + 哈希表 | [题解](3无重复字符的最长子串.cpp) | 已完成 |
 | [438](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) | 找到字符串中所有字母异位词 | 定长滑动窗口 + 哈希表 | [题解](438找到字符串中所有字母异位词.cpp) | 已完成 |
+| [560](https://leetcode.cn/problems/subarray-sum-equals-k/) | 和为 K 的子数组 | 前缀和 + 哈希表 | [题解](560和为K的子数组.cpp) | 已完成 |
+| [239](https://leetcode.cn/problems/sliding-window-maximum/) | 滑动窗口最大值 | 单调队列 | [题解](239滑动窗口最大值.cpp) | 已完成 |
+| [76](https://leetcode.cn/problems/minimum-window-substring/) | 最小覆盖子串 | 滑动窗口 + 哈希表 | [题解](76最小覆盖子串.cpp) | 已完成 |
 
 ## 维护规则
 

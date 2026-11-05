@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：12 / 100 | [返回力扣总览](../README.md)
+> 进度：17 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -20,6 +20,11 @@
 | [560](https://leetcode.cn/problems/subarray-sum-equals-k/) | 和为 K 的子数组 | 前缀和 + 哈希表 | [题解](560和为K的子数组.cpp) | 已完成 |
 | [239](https://leetcode.cn/problems/sliding-window-maximum/) | 滑动窗口最大值 | 单调队列 | [题解](239滑动窗口最大值.cpp) | 已完成 |
 | [76](https://leetcode.cn/problems/minimum-window-substring/) | 最小覆盖子串 | 滑动窗口 + 哈希表 | [题解](76最小覆盖子串.cpp) | 已完成 |
+| [53](https://leetcode.cn/problems/maximum-subarray/) | 最大子数组和 | 前缀和 / 动态规划 / 贪心 | [题解](53最大子数组和.cpp) | 已完成 |
+| [56](https://leetcode.cn/problems/merge-intervals/) | 合并区间 | 排序 + 贪心 | [题解](56合并区间.cpp) | 已完成 |
+| [189](https://leetcode.cn/problems/rotate-array/) | 轮转数组 | 三次反转 | [题解](189轮转数组.cpp) | 已完成 |
+| [238](https://leetcode.cn/problems/product-of-array-except-self/) | 除了自身以外数组的乘积 | 前缀积 + 后缀积 | [题解](238除了自身以外数组的乘积.cpp) | 已完成 |
+| [41](https://leetcode.cn/problems/first-missing-positive/) | 缺失的第一个正数 | 原地哈希 | [题解](41缺失的第一个正数.cpp) | 已完成 |
 
 ## 维护规则
 

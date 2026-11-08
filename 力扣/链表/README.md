@@ -1,6 +1,6 @@
 # 链表
 
-> 进度：11 | [返回总览](../README.md)
+> 进度：13 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -15,3 +15,5 @@
 | [206](https://leetcode.cn/problems/reverse-linked-list/) | [反转链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/206反转链表.cpp) | 迭代/递归反转 | - |
 | [707](https://leetcode.cn/problems/design-linked-list/) | [设计链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/707设计链表.cpp) | 虚头节点+长度维护 | 删除节点后需释放内存 |
 | [876](https://leetcode.cn/problems/middle-of-the-linked-list/) | [链表的中间节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/876链表的中间节点.cpp) | 快慢指针 | - |
+| [234](https://leetcode.cn/problems/palindrome-linked-list/) | [回文链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/234回文链表.cpp) | 快慢指针+反转后半链表 | - |
+| [24](https://leetcode.cn/problems/swap-nodes-in-pairs/) | [两两交换链表中的节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/24两两交换链表中的节点.cpp) | 虚头节点+指针操作 | - |

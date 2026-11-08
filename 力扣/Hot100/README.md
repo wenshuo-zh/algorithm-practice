@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：17 / 100 | [返回力扣总览](../README.md)
+> 进度：26 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -25,6 +25,15 @@
 | [189](https://leetcode.cn/problems/rotate-array/) | 轮转数组 | 三次反转 | [题解](189轮转数组.cpp) | 已完成 |
 | [238](https://leetcode.cn/problems/product-of-array-except-self/) | 除了自身以外数组的乘积 | 前缀积 + 后缀积 | [题解](238除了自身以外数组的乘积.cpp) | 已完成 |
 | [41](https://leetcode.cn/problems/first-missing-positive/) | 缺失的第一个正数 | 原地哈希 | [题解](41缺失的第一个正数.cpp) | 已完成 |
+| [160](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | 相交链表 | 双指针 | [题解](160相交链表.cpp) | 已完成 |
+| [206](https://leetcode.cn/problems/reverse-linked-list/) | 反转链表 | 链表反转 | [题解](206反转链表.cpp) | 已完成 |
+| [234](https://leetcode.cn/problems/palindrome-linked-list/) | 回文链表 | 快慢指针 + 反转链表 | [题解](234回文链表.cpp) | 已完成 |
+| [141](https://leetcode.cn/problems/linked-list-cycle/) | 环形链表 | 快慢指针 | [题解](141环形链表.cpp) | 已完成 |
+| [142](https://leetcode.cn/problems/linked-list-cycle-ii/) | 环形链表 II | 快慢指针 | [题解](142环形链表II.cpp) | 已完成 |
+| [21](https://leetcode.cn/problems/merge-two-sorted-lists/) | 合并两个有序链表 | 双指针 | [题解](21合并两个有序链表.cpp) | 已完成 |
+| [2](https://leetcode.cn/problems/add-two-numbers/) | 两数相加 | 链表模拟 | [题解](2两数相加.cpp) | 已完成 |
+| [19](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 删除链表的倒数第 N 个节点 | 快慢指针 | [题解](19删除链表的倒数第n个节点.cpp) | 已完成 |
+| [24](https://leetcode.cn/problems/swap-nodes-in-pairs/) | 两两交换链表中的节点 | 链表操作 | [题解](24两两交换链表中的节点.cpp) | 已完成 |
 
 ## 维护规则
 

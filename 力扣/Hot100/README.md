@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：26 / 100 | [返回力扣总览](../README.md)
+> 进度：31 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -34,6 +34,11 @@
 | [2](https://leetcode.cn/problems/add-two-numbers/) | 两数相加 | 链表模拟 | [题解](2两数相加.cpp) | 已完成 |
 | [19](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 删除链表的倒数第 N 个节点 | 快慢指针 | [题解](19删除链表的倒数第n个节点.cpp) | 已完成 |
 | [24](https://leetcode.cn/problems/swap-nodes-in-pairs/) | 两两交换链表中的节点 | 链表操作 | [题解](24两两交换链表中的节点.cpp) | 已完成 |
+| [25](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | K 个一组翻转链表 | 链表分组反转 | [题解](25K个一组翻转链表.cpp) | 已完成 |
+| [138](https://leetcode.cn/problems/copy-list-with-random-pointer/) | 随机链表的复制 | 哈希表 | [题解](138随机链表的复制.cpp) | 已完成 |
+| [148](https://leetcode.cn/problems/sort-list/) | 排序链表 | 归并排序 | [题解](148排序链表.cpp) | 已完成 |
+| [23](https://leetcode.cn/problems/merge-k-sorted-lists/) | 合并 K 个升序链表 | 顺序合并 / 分治 | [题解](23合并K个升序链表.cpp) | 已完成 |
+| [146](https://leetcode.cn/problems/lru-cache/) | LRU 缓存 | 哈希表 + 双向链表 | [题解](146LRU缓存.cpp) | 已完成 |
 
 ## 维护规则
 

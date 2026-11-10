@@ -1,6 +1,6 @@
 # 链表
 
-> 进度：13 | [返回总览](../README.md)
+> 进度：18 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -17,3 +17,8 @@
 | [876](https://leetcode.cn/problems/middle-of-the-linked-list/) | [链表的中间节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/链表/876链表的中间节点.cpp) | 快慢指针 | - |
 | [234](https://leetcode.cn/problems/palindrome-linked-list/) | [回文链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/234回文链表.cpp) | 快慢指针+反转后半链表 | - |
 | [24](https://leetcode.cn/problems/swap-nodes-in-pairs/) | [两两交换链表中的节点](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/24两两交换链表中的节点.cpp) | 虚头节点+指针操作 | - |
+| [25](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | [K 个一组翻转链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/25K个一组翻转链表.cpp) | 分组反转链表 | - |
+| [138](https://leetcode.cn/problems/copy-list-with-random-pointer/) | [随机链表的复制](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/138随机链表的复制.cpp) | 哈希表映射节点 | - |
+| [148](https://leetcode.cn/problems/sort-list/) | [排序链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/148排序链表.cpp) | 迭代归并排序 | - |
+| [23](https://leetcode.cn/problems/merge-k-sorted-lists/) | [合并 K 个升序链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/23合并K个升序链表.cpp) | 顺序合并+分治 | - |
+| [146](https://leetcode.cn/problems/lru-cache/) | [LRU 缓存](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/146LRU缓存.cpp) | 哈希表+双向链表 | - |

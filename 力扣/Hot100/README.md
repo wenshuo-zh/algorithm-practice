@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：31 / 100 | [返回力扣总览](../README.md)
+> 进度：37 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -39,6 +39,12 @@
 | [148](https://leetcode.cn/problems/sort-list/) | 排序链表 | 归并排序 | [题解](148排序链表.cpp) | 已完成 |
 | [23](https://leetcode.cn/problems/merge-k-sorted-lists/) | 合并 K 个升序链表 | 顺序合并 / 分治 | [题解](23合并K个升序链表.cpp) | 已完成 |
 | [146](https://leetcode.cn/problems/lru-cache/) | LRU 缓存 | 哈希表 + 双向链表 | [题解](146LRU缓存.cpp) | 已完成 |
+| [94](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | 二叉树的中序遍历 | DFS / 栈 | [题解](94二叉树的中序遍历.cpp) | 已完成 |
+| [104](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) | 二叉树的最大深度 | DFS / BFS | [题解](104二叉树的最大深度.cpp) | 已完成 |
+| [226](https://leetcode.cn/problems/invert-binary-tree/) | 翻转二叉树 | DFS / BFS | [题解](226翻转二叉树.cpp) | 已完成 |
+| [101](https://leetcode.cn/problems/symmetric-tree/) | 对称二叉树 | 递归 / 队列 | [题解](101对称二叉树.cpp) | 已完成 |
+| [543](https://leetcode.cn/problems/diameter-of-binary-tree/) | 二叉树的直径 | 后序遍历 | [题解](543二叉树的直径.cpp) | 已完成 |
+| [102](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 二叉树的层序遍历 | BFS | [题解](102二叉树的层序遍历.cpp) | 已完成 |
 
 ## 维护规则
 

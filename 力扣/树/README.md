@@ -1,12 +1,15 @@
 # 树
 
-> 进度：34 | [返回总览](../README.md)
+> 进度：37 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
 | [100](https://leetcode.cn/problems/same-tree/) | [相同的树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/100相同的树.cpp) | 递归比较 | - |
 | [101](https://leetcode.cn/problems/symmetric-tree/) | [对称二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/101对称二叉树.cpp) | 递归比较镜像节点 | 左左对右右、左右对右左 |
 | [104](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) | [二叉树的最大深度](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/104二叉树的最大深度.cpp) | 递归求深度 | - |
+| [94](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | [二叉树的中序遍历](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/94二叉树的中序遍历.cpp) | 递归 / 迭代栈 | 迭代时先一路压入左子树 |
+| [543](https://leetcode.cn/problems/diameter-of-binary-tree/) | [二叉树的直径](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/543二叉树的直径.cpp) | 后序遍历 | 直径按边数计算，为左右子树高度之和 |
+| [102](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [二叉树的层序遍历](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/102二叉树的层序遍历.cpp) | 队列层序遍历 | 每轮先固定当前层节点数 |
 | [110](https://leetcode.cn/problems/balanced-binary-tree/) | [平衡二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/110平衡二叉树.cpp) | 后序遍历求高度 | 用 `-1` 向上传递不平衡状态 |
 | [226](https://leetcode.cn/problems/invert-binary-tree/) | [反转二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/226反转二叉树.cpp) | 递归交换左右 | - |
 | [222](https://leetcode.cn/problems/count-complete-tree-nodes/) | [完全二叉树的节点个数](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/222完全二叉树的节点个数.cpp) | 满二叉树性质 + 递归 | 左右深度相同时可直接计算节点数 |

@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：37 / 100 | [返回力扣总览](../README.md)
+> 进度：51 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -45,6 +45,20 @@
 | [101](https://leetcode.cn/problems/symmetric-tree/) | 对称二叉树 | 递归 / 队列 | [题解](101对称二叉树.cpp) | 已完成 |
 | [543](https://leetcode.cn/problems/diameter-of-binary-tree/) | 二叉树的直径 | 后序遍历 | [题解](543二叉树的直径.cpp) | 已完成 |
 | [102](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | 二叉树的层序遍历 | BFS | [题解](102二叉树的层序遍历.cpp) | 已完成 |
+| [108](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | 将有序数组转换为二叉搜索树 | 分治 | [题解](108将有序数组转换为二叉搜索树.cpp) | 已完成 |
+| [98](https://leetcode.cn/problems/validate-binary-search-tree/) | 验证二叉搜索树 | BST / 中序遍历 | [题解](98验证二叉搜索树.cpp) | 已完成 |
+| [230](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) | 二叉搜索树中第 K 小的元素 | BST 中序遍历 | [题解](230二叉搜索树中第K小的元素.cpp) | 已完成 |
+| [199](https://leetcode.cn/problems/binary-tree-right-side-view/) | 二叉树的右视图 | 层序遍历 | [题解](199二叉树的右视图.cpp) | 已完成 |
+| [114](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | 二叉树展开为链表 | 前序遍历 | [题解](114二叉树展开为链表.cpp) | 已完成 |
+| [105](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 从前序与中序遍历序列构造二叉树 | 递归 / 哈希表 | [题解](105从前序与中序遍历构造二叉树.cpp) | 已完成 |
+| [437](https://leetcode.cn/problems/path-sum-iii/) | 路径总和 III | DFS / 前缀和 | [题解](437路径综合III.cpp) | 已完成 |
+| [236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | 二叉树的最近公共祖先 | 后序遍历 | [题解](236二叉树的公共祖先.cpp) | 已完成 |
+| [124](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) | 二叉树中的最大路径和 | 后序遍历 | [题解](124二叉树中最大路径和.cpp) | 已完成 |
+| [20](https://leetcode.cn/problems/valid-parentheses/) | 有效的括号 | 栈 | [题解](20有效的括号.cpp) | 已完成 |
+| [155](https://leetcode.cn/problems/min-stack/) | 最小栈 | 双栈 | [题解](155最小栈.cpp) | 已完成 |
+| [394](https://leetcode.cn/problems/decode-string/) | 字符串解码 | 双栈 | [题解](394字符串解码.cpp) | 已完成 |
+| [739](https://leetcode.cn/problems/daily-temperatures/) | 每日温度 | 单调栈 | [题解](739每日温度.cpp) | 已完成 |
+| [84](https://leetcode.cn/problems/largest-rectangle-in-histogram/) | 柱状图中最大的矩形 | 单调栈 | [题解](84柱状图中最大的矩形.cpp) | 已完成 |
 
 ## 维护规则
 

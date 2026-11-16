@@ -1,6 +1,6 @@
 # 树
 
-> 进度：37 | [返回总览](../README.md)
+> 进度：41 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -41,6 +41,10 @@
 | [654](https://leetcode.cn/problems/maximum-binary-tree/) | [最大二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/654最大二叉树.cpp) | 分治递归 | 区间最大值作根后切分数组 |
 | [617](https://leetcode.cn/problems/merge-two-binary-trees/) | [合并二叉树](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/617合并二叉树.cpp) | 递归 | 两树都空返回空，只有一侧为空直接返回另一侧 |
 | [236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [二叉树的最近公共祖先](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/树/236二叉树的最近公共祖先.cpp) | 后序回溯 | 左右子树都返回信号时，当前节点即祖先 |
+| [230](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) | [二叉搜索树中第 K 小的元素](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/230二叉搜索树中第K小的元素.cpp) | BST 中序遍历 | 第 k 个访问到的节点即答案 |
+| [114](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | [二叉树展开为链表](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/114二叉树展开为链表.cpp) | 前序遍历 + 修改指针 | 先保存节点顺序再重连左右指针 |
+| [437](https://leetcode.cn/problems/path-sum-iii/) | [路径总和 III](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/437路径综合III.cpp) | DFS / 前缀和 | 同文件保留暴力 DFS 与前缀和两种解法 |
+| [124](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) | [二叉树中的最大路径和](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/124二叉树中最大路径和.cpp) | 后序遍历 | 向上只返回单侧最大贡献 |
 
 ## 交叉索引（不重复计入本目录进度）
 

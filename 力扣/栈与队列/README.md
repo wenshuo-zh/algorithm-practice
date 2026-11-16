@@ -1,6 +1,6 @@
 # 栈与队列
 
-> 进度：7 | [返回总览](../README.md)
+> 进度：9 | [返回总览](../README.md)
 
 | 题号 | 题目 | 技巧/考点 | 注意点/踩坑 |
 |------|------|-----------|------|
@@ -11,3 +11,5 @@
 | [150](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [逆波兰表达式求值](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/栈与队列/150逆波兰表达式求值.cpp) | 栈模拟运算 | 减法、除法先弹出的是右操作数 |
 | [239](https://leetcode.cn/problems/sliding-window-maximum/) | [滑动窗口最大值](../Hot100/239滑动窗口最大值.cpp) | 单调队列 | Hot100 |
 | [347](https://leetcode.cn/problems/top-k-frequent-elements/) | [前 K 个高频元素](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/栈与队列/347前K个高频元素.cpp) | 哈希表 + 小顶堆 | 堆大小超过 `k` 时弹出频率最小元素 |
+| [155](https://leetcode.cn/problems/min-stack/) | [最小栈](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/155最小栈.cpp) | 双栈 | 辅助栈保存每个阶段的最小值 |
+| [394](https://leetcode.cn/problems/decode-string/) | [字符串解码](https://github.com/wenshuo-zh/algorithm-practice/blob/main/力扣/Hot100/394字符串解码.cpp) | 双栈 | 分别保存重复次数和待拼接字符串 |

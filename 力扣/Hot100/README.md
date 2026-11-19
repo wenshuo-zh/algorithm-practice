@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：51 / 100 | [返回力扣总览](../README.md)
+> 进度：55 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -54,6 +54,10 @@
 | [437](https://leetcode.cn/problems/path-sum-iii/) | 路径总和 III | DFS / 前缀和 | [题解](437路径综合III.cpp) | 已完成 |
 | [236](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | 二叉树的最近公共祖先 | 后序遍历 | [题解](236二叉树的公共祖先.cpp) | 已完成 |
 | [124](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) | 二叉树中的最大路径和 | 后序遍历 | [题解](124二叉树中最大路径和.cpp) | 已完成 |
+| [200](https://leetcode.cn/problems/number-of-islands/) | 岛屿数量 | DFS / 网格遍历 | [题解](200岛屿数量.cpp) | 已完成 |
+| [944](https://leetcode.cn/problems/rotting-oranges/) | 腐烂的橘子 | 多源 BFS | [题解](944腐烂的橘子.cpp) | 已完成 |
+| [207](https://leetcode.cn/problems/course-schedule/) | 课程表 | 拓扑排序 | [题解](207课程表.cpp) | 已完成 |
+| [208](https://leetcode.cn/problems/implement-trie-prefix-tree/) | 实现 Trie（前缀树） | 字典树 | [题解](208实现Trie前缀树.cpp) | 已完成 |
 | [20](https://leetcode.cn/problems/valid-parentheses/) | 有效的括号 | 栈 | [题解](20有效的括号.cpp) | 已完成 |
 | [155](https://leetcode.cn/problems/min-stack/) | 最小栈 | 双栈 | [题解](155最小栈.cpp) | 已完成 |
 | [394](https://leetcode.cn/problems/decode-string/) | 字符串解码 | 双栈 | [题解](394字符串解码.cpp) | 已完成 |

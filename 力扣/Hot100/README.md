@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：55 / 100 | [返回力扣总览](../README.md)
+> 进度：59 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -25,6 +25,10 @@
 | [189](https://leetcode.cn/problems/rotate-array/) | 轮转数组 | 三次反转 | [题解](189轮转数组.cpp) | 已完成 |
 | [238](https://leetcode.cn/problems/product-of-array-except-self/) | 除了自身以外数组的乘积 | 前缀积 + 后缀积 | [题解](238除了自身以外数组的乘积.cpp) | 已完成 |
 | [41](https://leetcode.cn/problems/first-missing-positive/) | 缺失的第一个正数 | 原地哈希 | [题解](41缺失的第一个正数.cpp) | 已完成 |
+| [48](https://leetcode.cn/problems/rotate-image/) | 旋转图像 | 矩阵转置 + 反转 | [题解](48旋转图像.cpp) | 已完成 |
+| [54](https://leetcode.cn/problems/spiral-matrix/) | 螺旋矩阵 | 模拟 / 收缩边界 | [题解](54螺旋矩阵.cpp) | 已完成 |
+| [73](https://leetcode.cn/problems/set-matrix-zeroes/) | 矩阵置零 | 矩阵标记 | [题解](73矩阵置零.cpp) | 已完成 |
+| [240](https://leetcode.cn/problems/search-a-2d-matrix-ii/) | 搜索二维矩阵 II | Z 型搜索 | [题解](240搜索二维矩阵II.cpp) | 已完成 |
 | [160](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | 相交链表 | 双指针 | [题解](160相交链表.cpp) | 已完成 |
 | [206](https://leetcode.cn/problems/reverse-linked-list/) | 反转链表 | 链表反转 | [题解](206反转链表.cpp) | 已完成 |
 | [234](https://leetcode.cn/problems/palindrome-linked-list/) | 回文链表 | 快慢指针 + 反转链表 | [题解](234回文链表.cpp) | 已完成 |

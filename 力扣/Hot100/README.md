@@ -1,6 +1,6 @@
 # LeetCode Hot100
 
-> 进度：59 / 100 | [返回力扣总览](../README.md)
+> 进度：67 / 100 | [返回力扣总览](../README.md)
 
 本目录用于记录 LeetCode Hot100 题单。Hot100 题解文件直接放在本目录；已解题目计入力扣总数。如果题目同时属于其他算法分类，其他分类 README 只保留交叉索引，不重复计数。
 
@@ -62,6 +62,14 @@
 | [944](https://leetcode.cn/problems/rotting-oranges/) | 腐烂的橘子 | 多源 BFS | [题解](944腐烂的橘子.cpp) | 已完成 |
 | [207](https://leetcode.cn/problems/course-schedule/) | 课程表 | 拓扑排序 | [题解](207课程表.cpp) | 已完成 |
 | [208](https://leetcode.cn/problems/implement-trie-prefix-tree/) | 实现 Trie（前缀树） | 字典树 | [题解](208实现Trie前缀树.cpp) | 已完成 |
+| [46](https://leetcode.cn/problems/permutations/) | 全排列 | 回溯 | [题解](46全排列.cpp) | 已完成 |
+| [78](https://leetcode.cn/problems/subsets/) | 子集 | 回溯 | [题解](78子集.cpp) | 已完成 |
+| [17](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | 电话号码的字母组合 | 回溯 | [题解](17电话号码的字母组合.cpp) | 已完成 |
+| [39](https://leetcode.cn/problems/combination-sum/) | 组合总和 | 回溯 | [题解](39组合求和.cpp) | 已完成 |
+| [22](https://leetcode.cn/problems/generate-parentheses/) | 括号生成 | 回溯 | [题解](22括号生成.cpp) | 已完成 |
+| [79](https://leetcode.cn/problems/word-search/) | 单词搜索 | 回溯 + 网格 DFS | [题解](79单词搜索.cpp) | 已完成 |
+| [131](https://leetcode.cn/problems/palindrome-partitioning/) | 分割回文串 | 回溯 | [题解](131分割回文串.cpp) | 已完成 |
+| [51](https://leetcode.cn/problems/n-queens/) | N 皇后 | 回溯 | [题解](51N皇后.cpp) | 已完成 |
 | [20](https://leetcode.cn/problems/valid-parentheses/) | 有效的括号 | 栈 | [题解](20有效的括号.cpp) | 已完成 |
 | [155](https://leetcode.cn/problems/min-stack/) | 最小栈 | 双栈 | [题解](155最小栈.cpp) | 已完成 |
 | [394](https://leetcode.cn/problems/decode-string/) | 字符串解码 | 双栈 | [题解](394字符串解码.cpp) | 已完成 |
